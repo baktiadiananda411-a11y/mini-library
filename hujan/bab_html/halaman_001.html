@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 1 - Hujan</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() { document.body.classList.toggle('light-mode'); }
+        
+        localStorage.setItem('hujan_last_read', 'halaman_001.html');
+        let riwayatBaca = JSON.parse(localStorage.getItem('hujan_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_001.html')) {
+            riwayatBaca.push('halaman_001.html');
+            localStorage.setItem('hujan_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav"><a href="../index.html">← Daftar Isi</a></div>
+        <h1>Halaman 1</h1>
+        <p>PJ</p>
+        <div class="nav-buttons">
+            <a href="../index.html">← Daftar Isi</a>
+            <a href="halaman_002.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

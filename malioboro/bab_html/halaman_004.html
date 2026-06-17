@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 004</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_004.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_004.html')) {
+            riwayatBaca.push('halaman_004.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 004</h1>
+        <p>"Ya mana gue tau, lagian lo lama banget tinggal cerita,” Kavio menyahut dengan emosi.</p>
+
+<p>“Lo nggak bungkus anak orang kan?” sahut Edmund menyelidik.</p>
+
+<p>“Bungkus ke UGD kali... hahahaha.” Hengki menimpali perkataan Edmund, laki-laki bule yang postur tubuhnya benar- benar bukan seperti orang Indonesia pada umumnya. Dari namanya saja sudah terlihat jelas dia orang luar, Edmund Pavitra.</p>
+
+<p>Malio membuka suara dan menceritakan apa yang terjadi pada dirinya semalam. "Gue salah masuk kamar. Lo tau kan kamar gue nomor 6017, karena semalam gue kleyengan, gue bener-bener nggak bisa baca angka. Berkali-kali gue masukin passcode apart gue tapi gagal terus sampe sepuluh kali, keblokir lah itu pintu. Gue kesel tuh, mana puyeng banget, gue tendang aja pintunya, jebol deh. Taunya itu kamar tetangga gue, nomor 6016."</p>
+
+<p>Ketiga temannya merespons seperti biasa, tertawa disertai sorakan-sorakan seperti, “Bego sih lo” “Anjir terus gimana? Kasian itu yang punya kamarnya” “Gue jadi tetangga lo mah gue tendang balik lo, Mal".</p>
+
+<p>Malio tertawa mendengar cibiran kawan-kawannya. "Gue tau gue salah, makanya hari ini gue mau gantiin pintu dia."</p>
+
+<p>“Siapa sih tetangga lo? Perasaan samping kamar lo si Okta."</p>
+
+<p>“Bukan, sebelah kiri. Cewek, gue nggak kenal karena jarang liat dia."</p>
+
+<p>"Jadi lo mau gantiin pintu dia?" Malio mengangguk. "Iyalah, semalem dia teriak terus gue</p>
+
+<p>diseret sekuriti, jadi gue janji bakalan ganti pintunya hari ini."</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_003.html">← Sebelumnya</a>
+            <a href="halaman_005.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

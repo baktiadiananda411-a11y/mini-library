@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 333</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_333.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_333.html')) {
+            riwayatBaca.push('halaman_333.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 333</h1>
+        <p>Gi reunian, Kata Bunda, waktu itu Ayah kayak malaikat di hidup dia. Ayah berhasil bantu Bunda keluar dari masa-masa terpuruk dan ketakutannya, Ayah bikin Bunda percaya lagi sama laki-laki, "mereka pacaran dua tahun dan baru nikah setelah Ayah berhasil bikin Bunda bisa percaya sepenuhnya sama dia.</p>
+
+<p>"Ayah sering bilang ke aku, kalo mau nakal ya nakal aja, tapi jangan pernah jahat sama perempuan. Ayah bebasin aku lakuin apa pun, dugem dibolehin, coba-coba alkohol boleh, balap liar boleh, tapi kalo aku melewati batas dan jadi manusia blangsak apalagi sampe pake narkoba, Ayah bilang Ayah akan jadi orang yang nyeret aku ke kantor polisi." Malio menggeleng-geleng sambil tertawa, "Ayah juga sering bilang jangan jahat sama perempuan karena Bunda koma dua hari waktu lahirin aku. Makanya, aku nggak berani nyakitin perempuan, kalo orang bilang Malio ganti-ganti cewek itu karena tiap hari kalo ada siapa pun yang butuh aku, aku bakalan ada buat mereka."</p>
+
+<p>Sera terdiam, mencoba memahami cerita yang Malio katakan padanya, lalu dia tersadar satu hal. “Berarti kamu jadi midnight untuk semua cewek?"</p>
+
+<p>“Nggak juga, cuma kamu yang bikin aku se-effort ini. Apa ya, ke mereka cuma sebatas nemenin pergi, atau bawain makanan, jalan bareng, anter jemput, udah. Tapi Serana bikin aku ngebut keliling Jogja waktu kamu nggak ada di apart dan Acha bilang kamu suka kabur nggak bawa HP. Waktu itu Chara mabuk, nelepon aku buat jemputin dia tapi aku lagi masak mi, laper banget. Minya juga belum matang dan aku nggak mau ninggalin mi aku demi Chara, jadi ya udah aku cuma bisa bantu nelepon Vio nyuruh dia jemputin Chara, Sedangkan kalo itu kamu, jangankan ninggalin mi, ninggalin rendang atau sate</p>
+
+<p>333</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_332.html">← Sebelumnya</a>
+            <a href="halaman_334.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

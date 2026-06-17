@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 405</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_405.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_405.html')) {
+            riwayatBaca.push('halaman_405.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 405</h1>
+        <p>Seline sering menginap di apartemennya sekarang, meraka terjaga sampai tengah malam sambil menonton drama Korea yang sedang ramai dibicarakan, atau menonton ulang acara komedi kesukaan mereka yang sering ditonton bersama Papah ketika mereka kecil, Terkadang, Melanie juga menjadikan unit Sera sebagai basecamp-nya. Seline dan Melanie menjadi akrab dengan cepat, dan saat weekend mereka selalu nongkrong di apartemen Sera, bahkan kalau mereka terlalu berisik Sera sampai-sampai harus mengungsi ke unit sebelah, meminjam kunci kamar Malio dari Melanie dan menikmati waktu sendiri di kamar Malio atas izin Melanie. Sera senang ada di sana, menghirup aroma tubuh Malio dan duduk berjam-jam di balkon kamarnya sambil mendengarkan suara cempreng Melanie dan Seline yang samar-samar terdengar.</p>
+
+<p>Hari-hari terus berlanjut, begitu juga dengan hidupnya. Sera melakukan lagi kebiasaan lamanya, berjalan sendirian saat malam hari, tapi kali ini dia selalu memiliki tujuan, jalan Malioboro. Sera betah duduk di sana, menikmati keramaian sambil mengenang hari-hari indah yang dia punya di sana. Sera tahu jika dirinya sudah berdamai dengan keadaan, duduk sendirian tak terasa menyakitkan lagi, dia bisa dengan bebas mengenang Richard ataupun Malio di sana. War is over, memikirkan mereka tak terasa seperti luka lagi baginya,</p>
+
+<p>Hari ini Richard pulang ke Jakarta, Li, Dia juga minta maaf sama aku lewat chat (aku juga belum mau ketemu lagi sama dia sih... hehe.) Aku nggak sedih Richard balik ke Jakarta, kayak, ya udah?? Semoga dia makin sukses???</p>
+
+<p>405</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_404.html">← Sebelumnya</a>
+            <a href="halaman_406.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

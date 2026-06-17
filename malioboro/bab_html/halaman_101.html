@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 101</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_101.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_101.html')) {
+            riwayatBaca.push('halaman_101.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 101</h1>
+        <p>"Ah gitu... hehe,"</p>
+
+<p>Malio menahan tawa melihat wajah Sera yang benar-benar kaku, dia menggeleng-geleng sambil melepas sepatunya. Setelah berbincang ringan dan basa-basi, Sabeum memberi perintah kepada Malio untuk berlari mengelilingi aula dua putaran kemudian melakukan pemanasan. "Gue tinggal latihan dulu ya, Ra, duduk aja di situ. Kalo haus di tas gue ada duit receh, lo beli aja di vending machine deket pintu rmasuk tadi, oke?" Malio pun berlari menjauh.</p>
+
+<p>"Kenapa gue jadi kayak cewek yang nemenin cowoknya latihan sih?” Sera menggerutu kecil, lalu mendudukkan diri di samping tas olahraga Malio.</p>
+
+<p>Awalnya dia pikir menonton orang latihan akan sangat membosankan, tapi ternyata hal ini sangat seru, apalagi ketika mendengar jeritan-jeritan mereka saat melakukan ketukan- ketukan seperti hana dul set, membuat Sera merasa senang tanpa sebab, jiwa K-popersnya terhibur dengan segala hal berbau Korea ini. Mata Sera mengamati sisi pinggir kiri aula, Malio dan teman-temannya sedang mengantre giliran untuk menendang bongkahan balok kayu yang digantung setinggi dua meter.</p>
+
+<p>“Hana dul set! Ha!"</p>
+
+<p>Brak!</p>
+
+<p>“LanjutI"</p>
+
+<p>“Hana dul set/ Ha!"</p>
+
+<p>Brak!</p>
+
+<p>“Good, selanjutnya!"</p>
+
+<p>101</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_100.html">← Sebelumnya</a>
+            <a href="halaman_102.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

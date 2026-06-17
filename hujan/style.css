@@ -1,0 +1,140 @@
+/* --- 1. TEMA DASAR (DARK MODE) --- */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 40px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* --- 2. TEMA TERANG (LIGHT MODE) --- */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body.light-mode .novel-wrapper {
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+body.light-mode h1, body.light-mode .btn-kembali { color: #5e35b1; }
+
+body.light-mode .grid-daftar a {
+    background: #eeeeee;
+    color: #5e35b1;
+    border: 1px solid #ddd;
+}
+
+body.light-mode .nav-buttons a { background: #5e35b1; color: #fff; }
+
+/* --- 3. KOMPONEN UI --- */
+.novel-wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    position: relative; /* Patokan posisi siluet */
+    overflow: hidden;
+    padding-bottom: 120px !important;
+    transition: background 0.3s;
+}
+
+h1 { color: #bb86fc; text-align: center; margin-bottom: 30px; font-size: 28px; }
+
+p { margin-bottom: 25px; text-align: justify; text-indent: 30px; }
+
+/* --- 4. NAVIGASI --- */
+.btn-kembali { color: #bb86fc; text-decoration: none; font-weight: bold; }
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #3d3d3d;
+}
+.nav-buttons a {
+    background: #bb86fc;
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- 5. SILUET (TUGU & LAMPU) PAS DI ATAS GARIS --- */
+
+/* Siluet Tugu Jogja (Kiri Bawah) */
+.novel-wrapper::before {
+    content: "";
+    position: absolute;
+    bottom: 175px; /* Dinaikkan ke 175px agar kakinya pas memijak garis horizontal */
+    left: 10px;
+    width: 150px;  
+    height: 270px; 
+    background-image: url('siluet_tugu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    
+    /* MENGUBAH GAMBAR HITAM MENJADI UNGU SOFT SECARA OTOMATIS */
+    filter: invert(74%) sepia(36%) saturate(1917%) hue-rotate(215deg) brightness(101%) contrast(98%);
+    opacity: 0.18; 
+    
+    pointer-events: none;
+    z-index: 0; 
+}
+
+/* Siluet Lampu Jogja (Kanan Bawah) */
+.novel-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 175px; /* Dinaikkan ke 175px agar kakinya pas memijak garis horizontal */
+    right: 10px;
+    width: 130px;  
+    height: 250px; 
+    background-image: url('siluet_lampu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    
+    /* MENGUBAH GAMBAR HITAM MENJADI UNGU SOFT SECARA OTOMATIS */
+    filter: invert(74%) sepia(36%) saturate(1917%) hue-rotate(215deg) brightness(101%) contrast(98%);
+    opacity: 0.18; 
+    
+    pointer-events: none;
+    z-index: 0; 
+}
+
+/* Penyesuaian Siluet saat MODE TERANG (Light Mode Active) */
+body.light-mode .novel-wrapper::before,
+body.light-mode .novel-wrapper::after {
+    filter: invert(25%) sepia(30%) saturate(1500%) hue-rotate(240deg) brightness(90%);
+    opacity: 0.08;
+}
+
+/* Memastikan tulisan dan tombol tetap berada di depan siluet */
+.novel-wrapper h1, .novel-wrapper p, .novel-wrapper .nav-buttons, .top-nav {
+    position: relative;
+    z-index: 2;
+}
+
+/* --- 6. TOMBOL TOGGLE TEMA --- */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #bb86fc;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1000;
+    transition: 0.3s;
+}
+body.light-mode .theme-toggle { background: #5e35b1; color: #fff; }

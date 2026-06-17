@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 010</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_010.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_010.html')) {
+            riwayatBaca.push('halaman_010.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 010</h1>
+        <p>Jakarta, Lalu sejak saat itulah mereka bertiga berubah menjadi bintang ibu kota. HITZ, High In The Zone, sebuah grup band indie yang sekarang nyaris seluruh lagunya diputar di mana. mana, Sebuah grup yang terdiri dari tiga orang dengan Richard sebagai vokalisnya.</p>
+
+<p>Sera bersyukur karena mimpi yang selama ini Richard dambakan sudah terwujud. Tapi akhir-akhir ini rasa bahagia itu berganti jadi kecewa, karena Richard Januarta kini berubah menjadi Jan Ichard, vokalis band HITZ yang kesibukannya melebihi presiden, membuat waktunya semakin berkurang untuk Sera. Sera tidak tahu bagaimana dia menjelaskan pada Richard jika dia sangat merindukan kekasihnya, rindu yang membuatnya lelah. Banyak yang bilang jika lelah, istirahat bukan berhenti. Tapi bagaimana jika lelah kali ini tidak bisa hilang hanya dengan beristirahat?</p>
+
+<p>Lamunan Sera dibuyarkan sebuah panggilan masuk. Perempuan itu dengan ragu mengangkat panggilannya. Itu kali pertama Sera kembali mendengar suara kekasihnya setelah beberapa pekan tak berkabar.</p>
+
+<p>"Halo, Sayang?" Suara Richard yang pertama kali menyapa dari seberang sana. "Kamu nggak bales chat aku," lanjutnya dengan nada sedih.</p>
+
+<p>Sambil melangkah menuju balkon apartemennya, Sera menjawab, "Aku habis mandi, baru aja mau bales chat kamu." Pintu kaca balkon dibuka lalu Sera menyandarkan kedua tumitnya di besi pembatas balkon.</p>
+
+<p>"Aku capek banget, baru aja sampe apart abis dari Bali, besok manggung di HUT ARC TV terus sorenya langsung ke Singapura." Sera bisa mendengar betapa lelahnya suara Richard</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_009.html">← Sebelumnya</a>
+            <a href="halaman_011.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

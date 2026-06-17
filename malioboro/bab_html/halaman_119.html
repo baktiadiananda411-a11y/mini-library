@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 119</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_119.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_119.html')) {
+            riwayatBaca.push('halaman_119.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 119</h1>
+        <p>"Good. By the way, pas banget satenya udah jadi." Makan malam mereka terhidang di atas meja. Malio masih menjadi sosok yang paling berisik di sisa malam itu, dia mengalihkan pembicaraan dan mengubah atmosfer di antara mereka. Dia menceritakan sejarah Warung Sate Klatak Mas Adi yang sedang mereka santap, Malio bilang Mas Adi punya tiga anak laki- laki dan semuanya jadi polisi. Saat Sera tanya dari mana Malio bisa tahu hal itu, Malio bilang orang tuanya sudah menjadi pelanggan setia di sini sejak ia kecil. Perasaan Sera menghangat ketika dia mendengarkan celotehan Malio sambil mengunyah potongan daging di mulutnya, air matanya telah tergantikan dengan kekehan yang kerap muncul saat Malio mengeluarkan candaan—yang sejujurnya garing—kepada Sera.</p>
+
+<p>Obrolan itu berlanjut, dari membahas polisi kini bergeser ke cita-cita. Malio meneguk es jeruknya kemudian bertanya, “Cita-cita lo apa, Ra?"</p>
+
+<p>Mata Sera bergulir acak, dia menatap sekitarnya sambil berpikir sejenak. "Apa ya? Jujur gue nggak punya cita-cita, gue tipikal manusia yang hidup di hari ini... hahaha.” Suara tawa Sera di akhir kalimatnya terdengar sengau. “Dulu, gue punya banyak mimpi dan rencana hidup, tapi banyak dari rencana dan mimpi itu yang gagal gue raih. Jadi setelah itu gue males buat bermimpi lagi, let it flow aja... terserah hidup mau jadiin gue apa,"</p>
+
+<p>Malio mengaduk kuah sate klataknya dan mengangguk- angguk. “That's deep, ! mean, lo nggak mau bermimpi lagi karena pernah kecewa saat mimpi-mimpi lo nggak berhasil." Wajahnya menoleh dan menatap Sera dalam. "Tapi pasti ada kan sesuatu atau profesi yang mau lo lakuin di masa depan? Ada nggak satu impian yang bener-bener masih tersisa di diri lo dan</p>
+
+<p>119</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_118.html">← Sebelumnya</a>
+            <a href="halaman_120.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

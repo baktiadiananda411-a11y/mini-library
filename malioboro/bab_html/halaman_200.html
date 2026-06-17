@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 200</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_200.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_200.html')) {
+            riwayatBaca.push('halaman_200.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 200</h1>
+        <p>"Kamu bisa ngebahayain karier aku! Sera kamu udah kelewatan kali ini..." Richard menggantungkan kalimatnya, dam menjambak rambutnya sendiri dengan gusar. "Kamu bener. bener bisa rusak karier aku, Ra," katanya lemas.</p>
+
+<p>“Karier kamu nggak bergantung sama Julia, Richard! Kenapa kamu sekhawatir ini cuma karena aku nyiram dia pake jus jeruk? Kamu...."</p>
+
+<p>"KARIER AKU ADA DI TANGAN DIA! Dan kamu... udah bikin semuanya kacau." Richard menggeleng lemah lalu mundur satu langkah dan mengusap wajahnya.</p>
+
+<p>Sera menggigit bibir, menahan tangisnya agar tidak keluar, “Julia hina kamu, Richard.... Kamu musisi hebatku, penyanyi yang berbakat. Hati aku sakit denger kamu direndahin dia." Sera menatap Richard dengan terluka. “Aku nggak mungkin tiba-tiba nyiram dia pake jus jeruk kalo dia—"</p>
+
+<p>"Aku nggak peduli apa yang dia bilang tentang aku, hinaan dia nggak bikin karier aku hancur. Justru kamu yang rusak semuanya, Ra."</p>
+
+<p>Air mata Sera menetes mendengar ucapan Richard.</p>
+
+<p>Richard menarik napas dalam-dalam, "Turun dan minta</p>
+
+<p>maaf ke Julia." "Nggak." “Turun!”</p>
+
+<p>“Dia yang harus minta maaf duluan karena udah hina kamu, baru aku mau minta maaf,"</p>
+
+<p>Laki-laki itu menatap lawan bicaranya dengan tidak percaya. "Kamu selalu kayak gini, inget kejadian waktu kamu banting kamera wartawan? Kamu angkuh dan nggak mau meng—"</p>
+
+<p>200</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_199.html">← Sebelumnya</a>
+            <a href="halaman_201.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

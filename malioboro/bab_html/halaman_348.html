@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 348</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_348.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_348.html')) {
+            riwayatBaca.push('halaman_348.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 348</h1>
+        <p>“Kak Sera ketawa-ketawa mulu, seseru itu ya pacaran?" Sera langsung mengalihkan wajahnya dari ponsel ke sang Adik. "Aku kalo udah kelas tiga boleh pacaran nggak?”</p>
+
+<p>“Nggak boleh, pacaran nggak seenak yang kamu liat Seline. Lagian kamu mau pacaran sama siapa?"</p>
+
+<p>"Ya belum ada, tapi pengen aja ngerasain kayak kak Sera pacaran sama Kak Richard atau Kak Malio."</p>
+
+<p>“Nanti aja kalo udah dewasa terus ketemu cowok yang baik, kalo masih SMP mending temenan aja, nggak boleh</p>
+
+<p>348</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_347.html">← Sebelumnya</a>
+            <a href="halaman_349.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

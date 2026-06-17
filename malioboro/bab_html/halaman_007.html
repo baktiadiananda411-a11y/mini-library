@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 007</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_007.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_007.html')) {
+            riwayatBaca.push('halaman_007.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 007</h1>
+        <p>Mau tidak mau, Sera mengiakan keinginan laki-laki itu- Ekspresi wajah mereka sangat bertolak belakang, Malio berusaha kuat menahan kedutan di bibirnya agar tidak kelepasan tertawa, sedangkan Sera memasang wajah sebal saat Malio mulai mengucapkan nomornya.</p>
+
+<p>“Nama lo siapa?" Sera bertanya sambil mengalihkan wajahnya dari layar ponsel, dia menatap Malio.</p>
+
+<p>"Malioboro."</p>
+
+<p>Alis Sera miring sebelah. Ini orang masih mabukkah? Sejak tadi malam dia terus berkata jika namanya Malioboro, tch, bukankah itu nama jalanan? Manusia mana yang menamai anaknya dengan nama jalan?</p>
+
+<p>“Gue serius, ayolah jangan bercanda terus. Gue udah capek banget seharian ngampus dan tadi malem gue nggak tidur karena gimana caranya gue tidur kalo pintu kamar gue nggak bisa ditutup karena ditendang sama orang aneh. Gue capek, jadi bisa serius dikit, nggak?"</p>
+
+<p>Malio berdecak malas, laki-laki itu merogoh saku celananya untuk mengambil dompet. Sera kira dia akan mengeluarkan uang tunai untuk mengganti biaya pintu, tapi ternyata dia mengeluarkan KTP miliknya dan menunjukkannya pada Sera. "Mahasiswi kan? Bisa baca?” Malio mengulang ucapan Sera.</p>
+
+<p>Malioboro Hartigan.</p>
+
+<p>Dulu sewaktu kecil, ayah Sera bilang orang tua biasanya menyematkan doa di dalam tiap bait nama anak-anaknya, sama halnya dengan nama yang diberikan sang ayah untuknya. Serana Nighita Siviera memiliki makna yang indah, yaitu perempuan yang membawa ketenangan seperti air sungai. Sebetulnya Sera</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_006.html">← Sebelumnya</a>
+            <a href="halaman_008.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

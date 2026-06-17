@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 100</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_100.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_100.html')) {
+            riwayatBaca.push('halaman_100.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 100</h1>
+        <p>akhir Ini mereka selalu berinteraksi, mungkin karena malam di mana Malio bilang jika dia ingin berteman dan menjadi tetangga yang baik, sehingga mereka—karena secara tak sadar Sara pun menjadi welcome pada Malio—benar-benar seperti tetangga yang akrab sekarang, Sera tahu jika Malio tahu bahwa Sera sudah memiliki kekasih, maka itu Sera berpikir, tak mungkin Malio memiliki niat lain selain berteman dengannya.</p>
+
+<p>Hari ini akhirnya dia mengiakan ajakan Malio untuk catching some red, pergi dibawa motor merah Malio melintasi jalanan perkotaan Yogyakarta yang padat. Membutuhkan waktu lima belas menit untuk sampai pada sebuah gedung satu lantai yang cukup luas, Sera menolak untuk berjalan beriringan dengan laki- laki itu dan berjalan di belakangnya. Ketika mereka masuk lewat pintu utama gedung, Sera bisa melihat banyak orang yang ada di dalam sana. Mereka semua menggunakan pakaian yang sama seperti Malio, baju dan celana longgar berwarna putih dengan beberapa logo, kemudian sabuk di pinggang berwarna-warni yang disesuaikan dengan tingkatannya. Malio menggunakan warna hitam, tebakan Sera, itu adalah tingkat yang paling tinggi.</p>
+
+<p>"Waduh Malioboro, sama siapa itu, huh?” Seorang pria dewasa yang menggunakan pakaian persis Malio berjalan mendekati mereka. “Pacar baru?"</p>
+
+<p>“Haha... bukan Beum, temen ini." Malio meletakkan tasnya di kursi yang ada di pinggir aula, lalu melakukan fist bump dengan sosok yang dia panggil Beum. “Ra, kenalin, Sabeum</p>
+
+<p>gue. Sera sedikit kikuk ketika Malio mengenalkan sosok itu padanya. “Halo, Sabeum?" sapanya canggung.</p>
+
+<p>“Sabeum itu artinya guru atau pelatih, saya pelatihnya Malio." inn “</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_099.html">← Sebelumnya</a>
+            <a href="halaman_101.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

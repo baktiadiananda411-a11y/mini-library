@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novel Haven - Library</title>
+    <style>
+        /* --- TEMA GELAP (DEFAULT) --- */
+        body {
+            background-color: #0f0f0f;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 50px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .header { text-align: center; margin-bottom: 60px; }
+        .header h1 { color: #bb86fc; font-size: 3em; margin: 0; letter-spacing: 3px; text-transform: uppercase; }
+        .header p { color: #888; font-style: italic; margin-top: 10px; font-size: 1.1em; }
+        
+        .library-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+            justify-content: center; 
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .book-card {
+            background: #1e1e1e;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+            border: 1px solid #333;
+        }
+        .book-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(187, 134, 252, 0.15);
+            border-color: #bb86fc;
+        }
+        
+        img.book-cover { width: 100%; height: 320px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+        .book-cover.empty {
+            background: #2c2c2c; border: 2px dashed #555; color: #555; height: 320px; display: flex; align-items: center; justify-content: center; border-radius: 8px; margin-bottom: 20px; font-size: 40px;
+        }
+        .book-title { font-size: 18px; margin: 0 0 5px; font-weight: bold; color: #fff; }
+        .book-author { font-size: 13px; color: #aaa; margin-bottom: 20px; }
+        .read-btn {
+            display: inline-block; background: #bb86fc; color: #121212; padding: 10px 0; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight: bold; width: 100%; transition: background 0.2s;
+        }
+        .read-btn:hover { background: #9a67ea; }
+        .read-btn.disabled { background: #444; color: #888; pointer-events: none; }
+
+        /* --- TEMA TERANG (LIGHT MODE) --- */
+        body.light-mode { background-color: #f4f4f4; color: #333; }
+        body.light-mode .book-card { background: #ffffff; border-color: #ddd; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        body.light-mode .header h1 { color: #5e35b1; }
+        body.light-mode .book-title { color: #222; }
+        body.light-mode .book-cover.empty { background: #eaeaea; border-color: #bbb; color: #888; }
+        body.light-mode .read-btn { background: #5e35b1; color: #fff; }
+        body.light-mode .read-btn:hover { background: #4527a0; }
+
+        /* --- TOMBOL SAKLAR TEMA --- */
+        .theme-toggle {
+            position: fixed; top: 20px; right: 20px; background: #bb86fc; color: #121212; border: none; padding: 10px 15px; border-radius: 20px; cursor: pointer; font-weight: bold; z-index: 1000; transition: 0.3s;
+        }
+        body.light-mode .theme-toggle { background: #5e35b1; color: #fff; }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+    </script>
+
+    <div class="header">
+        <h1>Novel Haven</h1>
+        <p>Perpustakaan Mini Digital</p>
+    </div>
+
+    <div class="library-grid">
+        <div class="book-card">
+            <img src="cover_malioboro.webp" class="book-cover" alt="Cover Malioboro at Midnight">
+            <div class="book-title">Malioboro at Midnight</div>
+            <div class="book-author">Selesai Dibersihkan</div>
+            <a href="malioboro/index.html" class="read-btn">Buka Buku</a>
+        </div>
+
+        <div class="book-card">
+            <img src="cover_hujan.jpg" class="book-cover" alt="Cover Hujan">
+            <div class="book-title">Hujan</div>
+            <div class="book-author">Tere Liye</div>
+            <a href="hujan/index.html" class="read-btn">Buka Buku</a>
+        </div>
+        
+        <div class="book-card">
+            <div class="book-cover empty">+</div>
+            <div class="book-title">Novel Selanjutnya</div>
+            <div class="book-author">Belum ditambahkan</div>
+            <a href="#" class="read-btn disabled">Terkunci</a>
+        </div>
+    </div>
+</body>
+</html>

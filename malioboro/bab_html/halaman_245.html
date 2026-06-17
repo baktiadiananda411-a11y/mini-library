@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 245</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_245.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_245.html')) {
+            riwayatBaca.push('halaman_245.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 245</h1>
+        <p>berdiri di depan Acha dan menarik tangan sahabatnya. "Let's 90, temenin lunch." Acha tidak bisa menolak ketika Hengki menariknya menjauh dari Sera. "Ada salam dari Malio. He says, "Have a nice day, Serana!”"</p>
+
+<p>Hengki melambai sambil melangkah meninggalkan Sera dengan Acha di sampingnya, sedangkan Sera kebingungan membalas ucapan Hengki.</p>
+
+<p>Sera kehilangan nafsu makan. la mengutak-atik ponselnya sambil menyeruput sisa ice chocolate-nya, kemudian ia tersadar ada unread message dari Malio yang dikirim sejak sepuluh menit lalu, Sebuah pesan singkat yang membuat Sera tersenyum hingga giginya terlihat.</p>
+
+<p>OA Malio</p>
+
+<p>THHH HAHAHA. Gue tuh seneng deh kalo Io manggil gue pacarnya Sehun, Kayak lo mendukung perhaluan gue cry cry...</p>
+
+<p>Nggak papa halu, gue juga pernah ngayal jadi pacarnya Niki. Nikita Mirzani? HAHAHA. KIRAIN...</p>
+
+<p>“By the way, akun IG sama Twitter Io masih deact ya?</p>
+
+<p>245</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_244.html">← Sebelumnya</a>
+            <a href="halaman_246.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

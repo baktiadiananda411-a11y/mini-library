@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 003</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_003.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_003.html')) {
+            riwayatBaca.push('halaman_003.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 003</h1>
+        <p>tetangga satu apartemen yang akan terganggu, Sera benar: benar ingin teriak sekarang juga.</p>
+
+<p>—</p>
+
+<p>w</p>
+
+<p>Semua orang pasti pernah melakukan hal bodoh di dalam hidupnya, entah sengaja atau tidak. Kecerobohan biasanya akan tetap terjadi mau seteliti apa pun manusia, sebab sial tidak pandang bulu. Tapi yang ini beda, rasa-rasanya dia justru selalu mencari kesialan atau terus-terusan melakukan hal bodoh. Nyaris tiga kali dalam dua minggu terakhir, dia akan duduk di Warung Mami sambil menceritakan kebodohannya pada tiga teman yang baginya juga sama bodohnya.</p>
+
+<p>"Kali ini gue nggak nabrak gerobak bakso lagi, gue bener- bener selamat sampe ke apartemen gue,” Malio mulai bercerita sambil mengunyah pisang goreng hangat. “Coba deh lo tebak, menurut lo kali ini gue ngapain?"</p>
+
+<p>"Ya mana gue tau. Burulah, lo ngapain lagi hari ini?” Yang pertama kali memberi respons adalah Kavio El Baren, laki-laki dengan tinggi 173 sentimeter dan rambut berwarna cokelat hasil semir pakai pewarna rambut bungkusan. Tubuh kurusnya dibalut sweter putih, joroknya, ada noda bekas kuah lontong sayur di bagian dada.</p>
+
+<p>“Kata gue, dia nabraknya bukan abang bakso lagi, tapi nyeruduk warung gudeg. Gocap kalo bener." Malio melempar sisa pisang gorengnya yang agak gosong dan mengenai kaus hitam laki-laki berambut hitam yang duduk di seberangnya, Hengki Ameer, teman Malio yang hobinya me-roasting orang lain. “Aduh,” keluh Hengki lalu melempar balik gorengan itu.</p>
+
+<p>"Yang bener nebaknya, masa gitu aja lo nggak bisa nebak."</p>
+
+<p>3</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_002.html">← Sebelumnya</a>
+            <a href="halaman_004.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

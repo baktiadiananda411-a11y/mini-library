@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 224</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_224.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_224.html')) {
+            riwayatBaca.push('halaman_224.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 224</h1>
+        <p>|</p>
+
+<p>mengganjal perutnya, tidak masalah baginya jika roti in sudah expired, dia pernah makan yang lebih buruk dari ini.</p>
+
+<p>Ting! Tingl Ting!</p>
+
+<p>Notifikasi beruntun di ponselnya membuat Sera terusik, kembali dia raih benda pipih itu dan melihat siapa yang mengirimkan pesan. Malio. Kunyahannya terhenti, dengan hati: hati dan rasa ragu Sera membuka lebih room chat dengan Malio.</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_223.html">← Sebelumnya</a>
+            <a href="halaman_225.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

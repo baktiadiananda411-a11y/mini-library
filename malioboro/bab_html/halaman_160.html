@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 160</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_160.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_160.html')) {
+            riwayatBaca.push('halaman_160.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 160</h1>
+        <p>ERE BEM he gue imone bari Io ha ini</p>
+
+<p>Entah sejak kapan Sera mengubah nama kontak si Perusuh menjadi Malio. Mungkin ketika dia sadar jika dia benar-benar menganggap Malio sebagai temannya, dan mungkin sejak hari di mana mereka menjadi dekat hingga Sera merasa dia bisa dengan leluasa menceritakan hari-harinya pada Malio.</p>
+
+<p>Jika biasanya Malio akan mendengarkan tangisannya tentang Richard, hari ini berbeda. Untuk pertama kalinya, Sera menceritakan kebahagiaan yang Richard beri untuknya.</p>
+
+<p>Ketika" Sera membuka jendela dan mendudukkan diri di bingkainya, dia bisa melihat Malio yang sedang berusaha melempar sebuah kaleng merah ke arahnya. Beberapa detik kemudian, kaleng itu ada di tangan Sera. Malio sudah duduk di jendela kamarnya, sama seperti yang Sera lakukan. Tapi bedanya Malio memangku sebuah gitar, lalu dia menjepit kaleng itu di antara telinga dan bahunya.</p>
+
+<p>yen 4</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_159.html">← Sebelumnya</a>
+            <a href="halaman_161.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

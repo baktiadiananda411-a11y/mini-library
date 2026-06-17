@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 256</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_256.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_256.html')) {
+            riwayatBaca.push('halaman_256.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 256</h1>
+        <p>Julia no #1</p>
+
+<p>@dantel</p>
+
+<p>Muncul dong lo! Atau jangan-jangan seneng ya akunnya rame? @seranighita</p>
+
+<p>Replied</p>
+
+<p>M</p>
+
+<p>@babutronton</p>
+
+<p>Nggak jelas, kenapa lonyalahin Sera? Terserah dialah mau muncul atau nggak!</p>
+
+<p>Salahin tuh idola lo yang nggak mendidik dan doyan selingkuh!</p>
+
+<p>Dadanya menghangat membaca komentar-komentar Malio membela dirinya. Ketika Sera menghilang dan menonaktifkan akun-akunnya, Sera pikir Malio hanya sibuk mengirim pesan beruntun kepadanya, tapi ternyata laki-laki itu juga membela dirinya di Twitter. Sera memilih untuk membuat tweet di akun barunya itu.</p>
+
+<p>Ss @majikantronton Halo? Ini akun buatannya Malio....</p>
+
+<p>Replied</p>
+
+<p>M</p>
+
+<p>@babutronton</p>
+
+<p>Halo, majikan. Selamat datang!</p>
+
+<p>15K</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_255.html">← Sebelumnya</a>
+            <a href="halaman_257.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

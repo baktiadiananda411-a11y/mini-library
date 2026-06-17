@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 342</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_342.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_342.html')) {
+            riwayatBaca.push('halaman_342.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 342</h1>
+        <p>bibirnya di telinga Richard, "Lo pikir kenapa HITZ bisa konser di seluruh Indonesia tapi nggak pernah ke Yogyakarta?” Julia tertawa dan mengusap belakang kepala Richard, "Karena gue nggak mau lo ketemu cewek lo," bisiknya dengan senyuman manis. "And now you're mine,"</p>
+
+<p>#</p>
+
+<p>342</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_341.html">← Sebelumnya</a>
+            <a href="halaman_343.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 225</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_225.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_225.html')) {
+            riwayatBaca.push('halaman_225.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 225</h1>
+        <p>Sera memilih untuk membalas pesan-pesan Malio, rasa khawatir yang Malio tuang lewat bubble chats-nya benar-benar menyentuh hati Sera, dia merasa dikhawatirkan saat semua orang membuangnya.</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_224.html">← Sebelumnya</a>
+            <a href="halaman_227.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

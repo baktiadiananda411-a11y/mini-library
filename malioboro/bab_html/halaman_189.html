@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 189</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_189.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_189.html')) {
+            riwayatBaca.push('halaman_189.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 189</h1>
+        <p>Malio berkacak pinggang di samping motornya, kenapa dia merasa sebingung ini. Masih pukul delapan malam, tarlalu cepat untuknya istirahat, Sebenarnya Malio punya banyak teman perempuan yang bisa diajak bersenang-senang malam ini, tapi in enggan. Malio tak Ingin pulang ke rumah orang tuanya, Malio ingin kembali ke apartemen, duduk di balkon kamarnya sambil membicarakan Sehun atau makanan kesukaan Tronton dengan Sera. Tanpa Sera di sana, rasa kosong menyelinap di hati Malio.</p>
+
+<p>"Sera Sera mulu anjir." Malio bak punya kepribadian ganda, yang satu merindukan Sera sedangkan sisi dirinya yang lain menyangkalnya.</p>
+
+<p>Dia memilih meraih helm dan memakainya, tapi baru saja duduk di atas motor, ponsel Malio yang berbunyi membuatnya kembali merogoh saku jaketnya. Sebuah nomor tidak dikenal mengiriminya pesan yang membuat Malio mengernyitkan alisnya.</p>
+
+<p>46281XXXXXXX Selamat malam, Nak Malio, Apa Tante bisa minta tolong?</p>
+
+<p>Malio menebak-nebak apakah ini salah satu Bude atau saudaranya yang lain. Ketika ia hendak membalas pesan tersebut, satu pesan baru masuk dan menghentikan jari-jarinya yang tengah mengetik.</p>
+
+<p>46281XXXXXXX</p>
+
+<p>Ini ibunya Sera,</p>
+
+<p>189</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_188.html">← Sebelumnya</a>
+            <a href="halaman_190.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

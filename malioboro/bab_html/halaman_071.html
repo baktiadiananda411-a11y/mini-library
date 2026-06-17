@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 071</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_071.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_071.html')) {
+            riwayatBaca.push('halaman_071.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 071</h1>
+        <p>Percakapan mereka selalu berakhir seporti itu. Entah sudah berapa kali mereka berdebat bulan ini, Tak ada lagi obrolan hangat penuh rasa sayang, mereka terlalu asing untuk disebut sepasang kekasih.</p>
+
+<p>Perempuan itu lagi-lagi menangis, biarkan saja matanya membengkak asalkan rasa sesak di dadanya bisa segera menghilang, Tengah malam selalu menjadi waktu yang menakutkan bagi Sera, karena di kelamnya malam dia semakin merasa sendiri. Dia hanya ditemani isak tangisnya sendiri, lalu perlahan-lahan tertidur dengan gelisah saat isak tangisnya sudah mereda. Tanpa pernah Sera sadari jika tangisannya selalu menembus tembok kamar, menyelinap masuk ke kamar di sampingnya sekalipun hanya bisa samar-samar terdengar. Malioboro selalu mendengar tangisanmu di tengah malam yang sepi ini, Serana.</p>
+
+<p>W</p>
+
+<p>7</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_070.html">← Sebelumnya</a>
+            <a href="halaman_072.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

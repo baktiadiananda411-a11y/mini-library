@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 70 - Hujan</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() { document.body.classList.toggle('light-mode'); }
+        
+        localStorage.setItem('hujan_last_read', 'halaman_070.html');
+        let riwayatBaca = JSON.parse(localStorage.getItem('hujan_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_070.html')) {
+            riwayatBaca.push('halaman_070.html');
+            localStorage.setItem('hujan_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav"><a href="../index.html">← Daftar Isi</a></div>
+        <h1>Halaman 70</h1>
+        <p>Saru tahun berlalu sejak bencana letusan gunung skala 8 VEI.</p>
+
+<p>Tenda pengungsian di stadion telah berkurang penghuninya. Sebagian besar penduduk kembali ke rumah masing-masing. Bagi yang berkecukupan dan beruntung, mereka bisa memper- baiki atau membangun kembali rumah mereka, masih seadanya, tapi itu lebih baik dibanding tinggal di tenda pengungsian. Bagi yang masih memiliki keluarga di kota lain, mereka pindah ke kota tersebur.</p>
+
+<p>Kehidupan mulai menggeliat. Kantor-kantor pemerintah dibuka, toko-toko kembali beroperasi, mesin pabrik menyala, pusar bisnis kembali berdenyur. Reruntuhan gedung masih di mana-mana, membaur bersama bangunan baru di kanan-kirinya yang bagai jamur tumbuh di musim hujan.</p>
+
+<p>Tidak semua beruntung. Toko kue milik ibu Esok terpaksa dirobohkan—bangunannya sudah miring dan retak. Setahun terakhir ibu Esok tinggal di renda pengungsian. Dia tidak punya tabungan, tidak bisa membangun lagi toko itu. Kondisi ibu Esok</p>
+
+<p>72</p>
+        <div class="nav-buttons">
+            <a href="halaman_069.html">← Sebelumnya</a>
+            <a href="halaman_071.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

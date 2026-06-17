@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Malioboro at Midnight - Daftar Isi</title>
+    <style>
+        .btn-kembali {
+            display: block; text-align: center; color: #bb86fc; text-decoration: none;
+            font-size: 14px; margin-bottom: 25px; font-weight: bold; transition: color 0.2s;
+        }
+        .btn-kembali:hover { color: #9a67ea; text-decoration: underline; }
+        
+        /* Desain Grid Kotak-Kotak */
+        .grid-daftar {
+            margin-top: 30px; padding: 0; list-style: none; display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px;
+        }
+        .grid-daftar a {
+            color: #bb86fc; text-decoration: none; background: #2c2c2c; padding: 12px 8px;
+            display: block; text-align: center; border-radius: 6px; font-size: 14px;
+            font-weight: bold; transition: all 0.2s ease; border: 1px solid #3d3d3d;
+            position: relative; /* Membuat acuan untuk posisi titik merah di sudut */
+        }
+        .grid-daftar a:hover {
+            background: #bb86fc; color: #121212; transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(187, 134, 252, 0.2);
+        }
+        
+        body.light-mode .grid-daftar a { background: #eeeeee; color: #5e35b1; border: 1px solid #ddd; }
+        body.light-mode .grid-daftar a:hover { background: #5e35b1; color: #ffffff; box-shadow: 0 4px 8px rgba(94, 53, 177, 0.2); }
+        
+        .btn-lanjut {
+            display: none; background: #bb86fc; color: #121212; text-align: center; padding: 12px;
+            border-radius: 6px; text-decoration: none; font-weight: bold; margin: 20px auto;
+            max-width: 250px; transition: all 0.2s ease;
+        }
+        .btn-lanjut:hover { background: #9a67ea; transform: translateY(-2px); }
+        body.light-mode .btn-lanjut { background: #5e35b1; color: #fff; }
+        body.light-mode .btn-lanjut:hover { background: #4527a0; }
+        
+        /* --- GAYA ELEMEN TITIK MERAH (SUDUT KANAN ATAS KOTAK) --- */
+        .grid-daftar a.sudah-dibaca::after {
+            content: "";
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            width: 8px;
+            height: 8px;
+            background-color: #ff4c4c; /* Merah menyala */
+            border-radius: 50%;
+            box-shadow: 0 0 5px #ff4c4c; /* Efek glowing tipis */
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+
+    <div class="novel-wrapper">
+        <a href="../index.html" class="btn-kembali">← Kembali ke Library Utama</a>
+
+        <h1 style="margin-bottom: 5px; text-align: center;">Malioboro at Midnight</h1>
+        <p style="text-align: center; font-style: italic; color: #aaa; margin-top: 0;">Koleksi Halaman Digital</p>
+        
+        <a href="#" id="btnLanjut" class="btn-lanjut">📖 Lanjut Membaca</a>
+        
+        <hr style="border: 0; border-top: 1px solid #3d3d3d; margin: 20px 0;">
+        
+        <ul class="grid-daftar">
+                <li><a href="bab_html/halaman_002.html">Halaman 002</a></li>
+                <li><a href="bab_html/halaman_003.html">Halaman 003</a></li>
+                <li><a href="bab_html/halaman_004.html">Halaman 004</a></li>
+                <li><a href="bab_html/halaman_005.html">Halaman 005</a></li>
+                <li><a href="bab_html/halaman_006.html">Halaman 006</a></li>
+                <li><a href="bab_html/halaman_007.html">Halaman 007</a></li>
+                <li><a href="bab_html/halaman_008.html">Halaman 008</a></li>
+                <li><a href="bab_html/halaman_009.html">Halaman 009</a></li>
+                <li><a href="bab_html/halaman_010.html">Halaman 010</a></li>
+                <li><a href="bab_html/halaman_011.html">Halaman 011</a></li>
+                <li><a href="bab_html/halaman_012.html">Halaman 012</a></li>
+                <li><a href="bab_html/halaman_013.html">Halaman 013</a></li>
+                <li><a href="bab_html/halaman_014.html">Halaman 014</a></li>
+                <li><a href="bab_html/halaman_015.html">Halaman 015</a></li>
+                <li><a href="bab_html/halaman_016.html">Halaman 016</a></li>
+                <li><a href="bab_html/halaman_017.html">Halaman 017</a></li>
+                <li><a href="bab_html/halaman_018.html">Halaman 018</a></li>
+                <li><a href="bab_html/halaman_019.html">Halaman 019</a></li>
+                <li><a href="bab_html/halaman_020.html">Halaman 020</a></li>
+                <li><a href="bab_html/halaman_021.html">Halaman 021</a></li>
+                <li><a href="bab_html/halaman_022.html">Halaman 022</a></li>
+                <li><a href="bab_html/halaman_023.html">Halaman 023</a></li>
+                <li><a href="bab_html/halaman_024.html">Halaman 024</a></li>
+                <li><a href="bab_html/halaman_025.html">Halaman 025</a></li>
+                <li><a href="bab_html/halaman_026.html">Halaman 026</a></li>
+                <li><a href="bab_html/halaman_027.html">Halaman 027</a></li>
+                <li><a href="bab_html/halaman_028.html">Halaman 028</a></li>
+                <li><a href="bab_html/halaman_029.html">Halaman 029</a></li>
+                <li><a href="bab_html/halaman_030.html">Halaman 030</a></li>
+                <li><a href="bab_html/halaman_031.html">Halaman 031</a></li>
+                <li><a href="bab_html/halaman_032.html">Halaman 032</a></li>
+                <li><a href="bab_html/halaman_033.html">Halaman 033</a></li>
+                <li><a href="bab_html/halaman_034.html">Halaman 034</a></li>
+                <li><a href="bab_html/halaman_035.html">Halaman 035</a></li>
+                <li><a href="bab_html/halaman_036.html">Halaman 036</a></li>
+                <li><a href="bab_html/halaman_037.html">Halaman 037</a></li>
+                <li><a href="bab_html/halaman_038.html">Halaman 038</a></li>
+                <li><a href="bab_html/halaman_039.html">Halaman 039</a></li>
+                <li><a href="bab_html/halaman_040.html">Halaman 040</a></li>
+                <li><a href="bab_html/halaman_041.html">Halaman 041</a></li>
+                <li><a href="bab_html/halaman_042.html">Halaman 042</a></li>
+                <li><a href="bab_html/halaman_043.html">Halaman 043</a></li>
+                <li><a href="bab_html/halaman_044.html">Halaman 044</a></li>
+                <li><a href="bab_html/halaman_045.html">Halaman 045</a></li>
+                <li><a href="bab_html/halaman_046.html">Halaman 046</a></li>
+                <li><a href="bab_html/halaman_047.html">Halaman 047</a></li>
+                <li><a href="bab_html/halaman_048.html">Halaman 048</a></li>
+                <li><a href="bab_html/halaman_049.html">Halaman 049</a></li>
+                <li><a href="bab_html/halaman_050.html">Halaman 050</a></li>
+                <li><a href="bab_html/halaman_051.html">Halaman 051</a></li>
+                <li><a href="bab_html/halaman_052.html">Halaman 052</a></li>
+                <li><a href="bab_html/halaman_053.html">Halaman 053</a></li>
+                <li><a href="bab_html/halaman_054.html">Halaman 054</a></li>
+                <li><a href="bab_html/halaman_055.html">Halaman 055</a></li>
+                <li><a href="bab_html/halaman_056.html">Halaman 056</a></li>
+                <li><a href="bab_html/halaman_057.html">Halaman 057</a></li>
+                <li><a href="bab_html/halaman_058.html">Halaman 058</a></li>
+                <li><a href="bab_html/halaman_059.html">Halaman 059</a></li>
+                <li><a href="bab_html/halaman_060.html">Halaman 060</a></li>
+                <li><a href="bab_html/halaman_061.html">Halaman 061</a></li>
+                <li><a href="bab_html/halaman_062.html">Halaman 062</a></li>
+                <li><a href="bab_html/halaman_063.html">Halaman 063</a></li>
+                <li><a href="bab_html/halaman_064.html">Halaman 064</a></li>
+                <li><a href="bab_html/halaman_065.html">Halaman 065</a></li>
+                <li><a href="bab_html/halaman_066.html">Halaman 066</a></li>
+                <li><a href="bab_html/halaman_067.html">Halaman 067</a></li>
+                <li><a href="bab_html/halaman_068.html">Halaman 068</a></li>
+                <li><a href="bab_html/halaman_069.html">Halaman 069</a></li>
+                <li><a href="bab_html/halaman_070.html">Halaman 070</a></li>
+                <li><a href="bab_html/halaman_071.html">Halaman 071</a></li>
+                <li><a href="bab_html/halaman_072.html">Halaman 072</a></li>
+                <li><a href="bab_html/halaman_073.html">Halaman 073</a></li>
+                <li><a href="bab_html/halaman_074.html">Halaman 074</a></li>
+                <li><a href="bab_html/halaman_075.html">Halaman 075</a></li>
+                <li><a href="bab_html/halaman_076.html">Halaman 076</a></li>
+                <li><a href="bab_html/halaman_077.html">Halaman 077</a></li>
+                <li><a href="bab_html/halaman_078.html">Halaman 078</a></li>
+                <li><a href="bab_html/halaman_079.html">Halaman 079</a></li>
+                <li><a href="bab_html/halaman_080.html">Halaman 080</a></li>
+                <li><a href="bab_html/halaman_081.html">Halaman 081</a></li>
+                <li><a href="bab_html/halaman_082.html">Halaman 082</a></li>
+                <li><a href="bab_html/halaman_083.html">Halaman 083</a></li>
+                <li><a href="bab_html/halaman_084.html">Halaman 084</a></li>
+                <li><a href="bab_html/halaman_085.html">Halaman 085</a></li>
+                <li><a href="bab_html/halaman_086.html">Halaman 086</a></li>
+                <li><a href="bab_html/halaman_087.html">Halaman 087</a></li>
+                <li><a href="bab_html/halaman_088.html">Halaman 088</a></li>
+                <li><a href="bab_html/halaman_089.html">Halaman 089</a></li>
+                <li><a href="bab_html/halaman_090.html">Halaman 090</a></li>
+                <li><a href="bab_html/halaman_091.html">Halaman 091</a></li>
+                <li><a href="bab_html/halaman_092.html">Halaman 092</a></li>
+                <li><a href="bab_html/halaman_093.html">Halaman 093</a></li>
+                <li><a href="bab_html/halaman_094.html">Halaman 094</a></li>
+                <li><a href="bab_html/halaman_095.html">Halaman 095</a></li>
+                <li><a href="bab_html/halaman_096.html">Halaman 096</a></li>
+                <li><a href="bab_html/halaman_097.html">Halaman 097</a></li>
+                <li><a href="bab_html/halaman_098.html">Halaman 098</a></li>
+                <li><a href="bab_html/halaman_099.html">Halaman 099</a></li>
+                <li><a href="bab_html/halaman_100.html">Halaman 100</a></li>
+                <li><a href="bab_html/halaman_101.html">Halaman 101</a></li>
+                <li><a href="bab_html/halaman_102.html">Halaman 102</a></li>
+                <li><a href="bab_html/halaman_103.html">Halaman 103</a></li>
+                <li><a href="bab_html/halaman_104.html">Halaman 104</a></li>
+                <li><a href="bab_html/halaman_105.html">Halaman 105</a></li>
+                <li><a href="bab_html/halaman_106.html">Halaman 106</a></li>
+                <li><a href="bab_html/halaman_107.html">Halaman 107</a></li>
+                <li><a href="bab_html/halaman_108.html">Halaman 108</a></li>
+                <li><a href="bab_html/halaman_109.html">Halaman 109</a></li>
+                <li><a href="bab_html/halaman_110.html">Halaman 110</a></li>
+                <li><a href="bab_html/halaman_111.html">Halaman 111</a></li>
+                <li><a href="bab_html/halaman_112.html">Halaman 112</a></li>
+                <li><a href="bab_html/halaman_113.html">Halaman 113</a></li>
+                <li><a href="bab_html/halaman_114.html">Halaman 114</a></li>
+                <li><a href="bab_html/halaman_115.html">Halaman 115</a></li>
+                <li><a href="bab_html/halaman_116.html">Halaman 116</a></li>
+                <li><a href="bab_html/halaman_117.html">Halaman 117</a></li>
+                <li><a href="bab_html/halaman_118.html">Halaman 118</a></li>
+                <li><a href="bab_html/halaman_119.html">Halaman 119</a></li>
+                <li><a href="bab_html/halaman_120.html">Halaman 120</a></li>
+                <li><a href="bab_html/halaman_121.html">Halaman 121</a></li>
+                <li><a href="bab_html/halaman_122.html">Halaman 122</a></li>
+                <li><a href="bab_html/halaman_123.html">Halaman 123</a></li>
+                <li><a href="bab_html/halaman_124.html">Halaman 124</a></li>
+                <li><a href="bab_html/halaman_125.html">Halaman 125</a></li>
+                <li><a href="bab_html/halaman_126.html">Halaman 126</a></li>
+                <li><a href="bab_html/halaman_127.html">Halaman 127</a></li>
+                <li><a href="bab_html/halaman_128.html">Halaman 128</a></li>
+                <li><a href="bab_html/halaman_129.html">Halaman 129</a></li>
+                <li><a href="bab_html/halaman_130.html">Halaman 130</a></li>
+                <li><a href="bab_html/halaman_131.html">Halaman 131</a></li>
+                <li><a href="bab_html/halaman_132.html">Halaman 132</a></li>
+                <li><a href="bab_html/halaman_133.html">Halaman 133</a></li>
+                <li><a href="bab_html/halaman_134.html">Halaman 134</a></li>
+                <li><a href="bab_html/halaman_135.html">Halaman 135</a></li>
+                <li><a href="bab_html/halaman_136.html">Halaman 136</a></li>
+                <li><a href="bab_html/halaman_137.html">Halaman 137</a></li>
+                <li><a href="bab_html/halaman_138.html">Halaman 138</a></li>
+                <li><a href="bab_html/halaman_139.html">Halaman 139</a></li>
+                <li><a href="bab_html/halaman_140.html">Halaman 140</a></li>
+                <li><a href="bab_html/halaman_141.html">Halaman 141</a></li>
+                <li><a href="bab_html/halaman_142.html">Halaman 142</a></li>
+                <li><a href="bab_html/halaman_143.html">Halaman 143</a></li>
+                <li><a href="bab_html/halaman_144.html">Halaman 144</a></li>
+                <li><a href="bab_html/halaman_145.html">Halaman 145</a></li>
+                <li><a href="bab_html/halaman_146.html">Halaman 146</a></li>
+                <li><a href="bab_html/halaman_147.html">Halaman 147</a></li>
+                <li><a href="bab_html/halaman_148.html">Halaman 148</a></li>
+                <li><a href="bab_html/halaman_149.html">Halaman 149</a></li>
+                <li><a href="bab_html/halaman_150.html">Halaman 150</a></li>
+                <li><a href="bab_html/halaman_151.html">Halaman 151</a></li>
+                <li><a href="bab_html/halaman_152.html">Halaman 152</a></li>
+                <li><a href="bab_html/halaman_153.html">Halaman 153</a></li>
+                <li><a href="bab_html/halaman_154.html">Halaman 154</a></li>
+                <li><a href="bab_html/halaman_155.html">Halaman 155</a></li>
+                <li><a href="bab_html/halaman_156.html">Halaman 156</a></li>
+                <li><a href="bab_html/halaman_157.html">Halaman 157</a></li>
+                <li><a href="bab_html/halaman_158.html">Halaman 158</a></li>
+                <li><a href="bab_html/halaman_159.html">Halaman 159</a></li>
+                <li><a href="bab_html/halaman_160.html">Halaman 160</a></li>
+                <li><a href="bab_html/halaman_161.html">Halaman 161</a></li>
+                <li><a href="bab_html/halaman_162.html">Halaman 162</a></li>
+                <li><a href="bab_html/halaman_163.html">Halaman 163</a></li>
+                <li><a href="bab_html/halaman_164.html">Halaman 164</a></li>
+                <li><a href="bab_html/halaman_165.html">Halaman 165</a></li>
+                <li><a href="bab_html/halaman_166.html">Halaman 166</a></li>
+                <li><a href="bab_html/halaman_167.html">Halaman 167</a></li>
+                <li><a href="bab_html/halaman_168.html">Halaman 168</a></li>
+                <li><a href="bab_html/halaman_169.html">Halaman 169</a></li>
+                <li><a href="bab_html/halaman_170.html">Halaman 170</a></li>
+                <li><a href="bab_html/halaman_171.html">Halaman 171</a></li>
+                <li><a href="bab_html/halaman_172.html">Halaman 172</a></li>
+                <li><a href="bab_html/halaman_173.html">Halaman 173</a></li>
+                <li><a href="bab_html/halaman_174.html">Halaman 174</a></li>
+                <li><a href="bab_html/halaman_175.html">Halaman 175</a></li>
+                <li><a href="bab_html/halaman_176.html">Halaman 176</a></li>
+                <li><a href="bab_html/halaman_177.html">Halaman 177</a></li>
+                <li><a href="bab_html/halaman_178.html">Halaman 178</a></li>
+                <li><a href="bab_html/halaman_179.html">Halaman 179</a></li>
+                <li><a href="bab_html/halaman_180.html">Halaman 180</a></li>
+                <li><a href="bab_html/halaman_181.html">Halaman 181</a></li>
+                <li><a href="bab_html/halaman_182.html">Halaman 182</a></li>
+                <li><a href="bab_html/halaman_183.html">Halaman 183</a></li>
+                <li><a href="bab_html/halaman_184.html">Halaman 184</a></li>
+                <li><a href="bab_html/halaman_185.html">Halaman 185</a></li>
+                <li><a href="bab_html/halaman_186.html">Halaman 186</a></li>
+                <li><a href="bab_html/halaman_187.html">Halaman 187</a></li>
+                <li><a href="bab_html/halaman_188.html">Halaman 188</a></li>
+                <li><a href="bab_html/halaman_189.html">Halaman 189</a></li>
+                <li><a href="bab_html/halaman_190.html">Halaman 190</a></li>
+                <li><a href="bab_html/halaman_191.html">Halaman 191</a></li>
+                <li><a href="bab_html/halaman_192.html">Halaman 192</a></li>
+                <li><a href="bab_html/halaman_193.html">Halaman 193</a></li>
+                <li><a href="bab_html/halaman_194.html">Halaman 194</a></li>
+                <li><a href="bab_html/halaman_195.html">Halaman 195</a></li>
+                <li><a href="bab_html/halaman_196.html">Halaman 196</a></li>
+                <li><a href="bab_html/halaman_197.html">Halaman 197</a></li>
+                <li><a href="bab_html/halaman_198.html">Halaman 198</a></li>
+                <li><a href="bab_html/halaman_199.html">Halaman 199</a></li>
+                <li><a href="bab_html/halaman_200.html">Halaman 200</a></li>
+                <li><a href="bab_html/halaman_201.html">Halaman 201</a></li>
+                <li><a href="bab_html/halaman_202.html">Halaman 202</a></li>
+                <li><a href="bab_html/halaman_203.html">Halaman 203</a></li>
+                <li><a href="bab_html/halaman_204.html">Halaman 204</a></li>
+                <li><a href="bab_html/halaman_205.html">Halaman 205</a></li>
+                <li><a href="bab_html/halaman_206.html">Halaman 206</a></li>
+                <li><a href="bab_html/halaman_207.html">Halaman 207</a></li>
+                <li><a href="bab_html/halaman_208.html">Halaman 208</a></li>
+                <li><a href="bab_html/halaman_209.html">Halaman 209</a></li>
+                <li><a href="bab_html/halaman_210.html">Halaman 210</a></li>
+                <li><a href="bab_html/halaman_211.html">Halaman 211</a></li>
+                <li><a href="bab_html/halaman_212.html">Halaman 212</a></li>
+                <li><a href="bab_html/halaman_213.html">Halaman 213</a></li>
+                <li><a href="bab_html/halaman_214.html">Halaman 214</a></li>
+                <li><a href="bab_html/halaman_215.html">Halaman 215</a></li>
+                <li><a href="bab_html/halaman_216.html">Halaman 216</a></li>
+                <li><a href="bab_html/halaman_217.html">Halaman 217</a></li>
+                <li><a href="bab_html/halaman_218.html">Halaman 218</a></li>
+                <li><a href="bab_html/halaman_219.html">Halaman 219</a></li>
+                <li><a href="bab_html/halaman_220.html">Halaman 220</a></li>
+                <li><a href="bab_html/halaman_221.html">Halaman 221</a></li>
+                <li><a href="bab_html/halaman_222.html">Halaman 222</a></li>
+                <li><a href="bab_html/halaman_223.html">Halaman 223</a></li>
+                <li><a href="bab_html/halaman_224.html">Halaman 224</a></li>
+                <li><a href="bab_html/halaman_225.html">Halaman 225</a></li>
+                <li><a href="bab_html/halaman_227.html">Halaman 227</a></li>
+                <li><a href="bab_html/halaman_228.html">Halaman 228</a></li>
+                <li><a href="bab_html/halaman_229.html">Halaman 229</a></li>
+                <li><a href="bab_html/halaman_230.html">Halaman 230</a></li>
+                <li><a href="bab_html/halaman_231.html">Halaman 231</a></li>
+                <li><a href="bab_html/halaman_232.html">Halaman 232</a></li>
+                <li><a href="bab_html/halaman_233.html">Halaman 233</a></li>
+                <li><a href="bab_html/halaman_234.html">Halaman 234</a></li>
+                <li><a href="bab_html/halaman_235.html">Halaman 235</a></li>
+                <li><a href="bab_html/halaman_236.html">Halaman 236</a></li>
+                <li><a href="bab_html/halaman_237.html">Halaman 237</a></li>
+                <li><a href="bab_html/halaman_238.html">Halaman 238</a></li>
+                <li><a href="bab_html/halaman_239.html">Halaman 239</a></li>
+                <li><a href="bab_html/halaman_240.html">Halaman 240</a></li>
+                <li><a href="bab_html/halaman_241.html">Halaman 241</a></li>
+                <li><a href="bab_html/halaman_242.html">Halaman 242</a></li>
+                <li><a href="bab_html/halaman_243.html">Halaman 243</a></li>
+                <li><a href="bab_html/halaman_244.html">Halaman 244</a></li>
+                <li><a href="bab_html/halaman_245.html">Halaman 245</a></li>
+                <li><a href="bab_html/halaman_246.html">Halaman 246</a></li>
+                <li><a href="bab_html/halaman_247.html">Halaman 247</a></li>
+                <li><a href="bab_html/halaman_248.html">Halaman 248</a></li>
+                <li><a href="bab_html/halaman_249.html">Halaman 249</a></li>
+                <li><a href="bab_html/halaman_250.html">Halaman 250</a></li>
+                <li><a href="bab_html/halaman_251.html">Halaman 251</a></li>
+                <li><a href="bab_html/halaman_252.html">Halaman 252</a></li>
+                <li><a href="bab_html/halaman_253.html">Halaman 253</a></li>
+                <li><a href="bab_html/halaman_254.html">Halaman 254</a></li>
+                <li><a href="bab_html/halaman_255.html">Halaman 255</a></li>
+                <li><a href="bab_html/halaman_256.html">Halaman 256</a></li>
+                <li><a href="bab_html/halaman_257.html">Halaman 257</a></li>
+                <li><a href="bab_html/halaman_258.html">Halaman 258</a></li>
+                <li><a href="bab_html/halaman_259.html">Halaman 259</a></li>
+                <li><a href="bab_html/halaman_260.html">Halaman 260</a></li>
+                <li><a href="bab_html/halaman_261.html">Halaman 261</a></li>
+                <li><a href="bab_html/halaman_262.html">Halaman 262</a></li>
+                <li><a href="bab_html/halaman_263.html">Halaman 263</a></li>
+                <li><a href="bab_html/halaman_264.html">Halaman 264</a></li>
+                <li><a href="bab_html/halaman_265.html">Halaman 265</a></li>
+                <li><a href="bab_html/halaman_266.html">Halaman 266</a></li>
+                <li><a href="bab_html/halaman_267.html">Halaman 267</a></li>
+                <li><a href="bab_html/halaman_268.html">Halaman 268</a></li>
+                <li><a href="bab_html/halaman_269.html">Halaman 269</a></li>
+                <li><a href="bab_html/halaman_270.html">Halaman 270</a></li>
+                <li><a href="bab_html/halaman_271.html">Halaman 271</a></li>
+                <li><a href="bab_html/halaman_272.html">Halaman 272</a></li>
+                <li><a href="bab_html/halaman_273.html">Halaman 273</a></li>
+                <li><a href="bab_html/halaman_274.html">Halaman 274</a></li>
+                <li><a href="bab_html/halaman_275.html">Halaman 275</a></li>
+                <li><a href="bab_html/halaman_276.html">Halaman 276</a></li>
+                <li><a href="bab_html/halaman_277.html">Halaman 277</a></li>
+                <li><a href="bab_html/halaman_278.html">Halaman 278</a></li>
+                <li><a href="bab_html/halaman_279.html">Halaman 279</a></li>
+                <li><a href="bab_html/halaman_280.html">Halaman 280</a></li>
+                <li><a href="bab_html/halaman_281.html">Halaman 281</a></li>
+                <li><a href="bab_html/halaman_282.html">Halaman 282</a></li>
+                <li><a href="bab_html/halaman_283.html">Halaman 283</a></li>
+                <li><a href="bab_html/halaman_284.html">Halaman 284</a></li>
+                <li><a href="bab_html/halaman_285.html">Halaman 285</a></li>
+                <li><a href="bab_html/halaman_286.html">Halaman 286</a></li>
+                <li><a href="bab_html/halaman_287.html">Halaman 287</a></li>
+                <li><a href="bab_html/halaman_288.html">Halaman 288</a></li>
+                <li><a href="bab_html/halaman_289.html">Halaman 289</a></li>
+                <li><a href="bab_html/halaman_290.html">Halaman 290</a></li>
+                <li><a href="bab_html/halaman_291.html">Halaman 291</a></li>
+                <li><a href="bab_html/halaman_292.html">Halaman 292</a></li>
+                <li><a href="bab_html/halaman_293.html">Halaman 293</a></li>
+                <li><a href="bab_html/halaman_294.html">Halaman 294</a></li>
+                <li><a href="bab_html/halaman_295.html">Halaman 295</a></li>
+                <li><a href="bab_html/halaman_296.html">Halaman 296</a></li>
+                <li><a href="bab_html/halaman_297.html">Halaman 297</a></li>
+                <li><a href="bab_html/halaman_298.html">Halaman 298</a></li>
+                <li><a href="bab_html/halaman_299.html">Halaman 299</a></li>
+                <li><a href="bab_html/halaman_300.html">Halaman 300</a></li>
+                <li><a href="bab_html/halaman_301.html">Halaman 301</a></li>
+                <li><a href="bab_html/halaman_302.html">Halaman 302</a></li>
+                <li><a href="bab_html/halaman_303.html">Halaman 303</a></li>
+                <li><a href="bab_html/halaman_304.html">Halaman 304</a></li>
+                <li><a href="bab_html/halaman_305.html">Halaman 305</a></li>
+                <li><a href="bab_html/halaman_306.html">Halaman 306</a></li>
+                <li><a href="bab_html/halaman_307.html">Halaman 307</a></li>
+                <li><a href="bab_html/halaman_308.html">Halaman 308</a></li>
+                <li><a href="bab_html/halaman_309.html">Halaman 309</a></li>
+                <li><a href="bab_html/halaman_310.html">Halaman 310</a></li>
+                <li><a href="bab_html/halaman_311.html">Halaman 311</a></li>
+                <li><a href="bab_html/halaman_312.html">Halaman 312</a></li>
+                <li><a href="bab_html/halaman_313.html">Halaman 313</a></li>
+                <li><a href="bab_html/halaman_314.html">Halaman 314</a></li>
+                <li><a href="bab_html/halaman_315.html">Halaman 315</a></li>
+                <li><a href="bab_html/halaman_316.html">Halaman 316</a></li>
+                <li><a href="bab_html/halaman_317.html">Halaman 317</a></li>
+                <li><a href="bab_html/halaman_318.html">Halaman 318</a></li>
+                <li><a href="bab_html/halaman_319.html">Halaman 319</a></li>
+                <li><a href="bab_html/halaman_320.html">Halaman 320</a></li>
+                <li><a href="bab_html/halaman_321.html">Halaman 321</a></li>
+                <li><a href="bab_html/halaman_322.html">Halaman 322</a></li>
+                <li><a href="bab_html/halaman_323.html">Halaman 323</a></li>
+                <li><a href="bab_html/halaman_324.html">Halaman 324</a></li>
+                <li><a href="bab_html/halaman_325.html">Halaman 325</a></li>
+                <li><a href="bab_html/halaman_326.html">Halaman 326</a></li>
+                <li><a href="bab_html/halaman_327.html">Halaman 327</a></li>
+                <li><a href="bab_html/halaman_328.html">Halaman 328</a></li>
+                <li><a href="bab_html/halaman_329.html">Halaman 329</a></li>
+                <li><a href="bab_html/halaman_330.html">Halaman 330</a></li>
+                <li><a href="bab_html/halaman_331.html">Halaman 331</a></li>
+                <li><a href="bab_html/halaman_332.html">Halaman 332</a></li>
+                <li><a href="bab_html/halaman_333.html">Halaman 333</a></li>
+                <li><a href="bab_html/halaman_334.html">Halaman 334</a></li>
+                <li><a href="bab_html/halaman_335.html">Halaman 335</a></li>
+                <li><a href="bab_html/halaman_336.html">Halaman 336</a></li>
+                <li><a href="bab_html/halaman_337.html">Halaman 337</a></li>
+                <li><a href="bab_html/halaman_338.html">Halaman 338</a></li>
+                <li><a href="bab_html/halaman_339.html">Halaman 339</a></li>
+                <li><a href="bab_html/halaman_340.html">Halaman 340</a></li>
+                <li><a href="bab_html/halaman_341.html">Halaman 341</a></li>
+                <li><a href="bab_html/halaman_342.html">Halaman 342</a></li>
+                <li><a href="bab_html/halaman_343.html">Halaman 343</a></li>
+                <li><a href="bab_html/halaman_344.html">Halaman 344</a></li>
+                <li><a href="bab_html/halaman_345.html">Halaman 345</a></li>
+                <li><a href="bab_html/halaman_346.html">Halaman 346</a></li>
+                <li><a href="bab_html/halaman_347.html">Halaman 347</a></li>
+                <li><a href="bab_html/halaman_348.html">Halaman 348</a></li>
+                <li><a href="bab_html/halaman_349.html">Halaman 349</a></li>
+                <li><a href="bab_html/halaman_350.html">Halaman 350</a></li>
+                <li><a href="bab_html/halaman_351.html">Halaman 351</a></li>
+                <li><a href="bab_html/halaman_352.html">Halaman 352</a></li>
+                <li><a href="bab_html/halaman_353.html">Halaman 353</a></li>
+                <li><a href="bab_html/halaman_354.html">Halaman 354</a></li>
+                <li><a href="bab_html/halaman_355.html">Halaman 355</a></li>
+                <li><a href="bab_html/halaman_356.html">Halaman 356</a></li>
+                <li><a href="bab_html/halaman_357.html">Halaman 357</a></li>
+                <li><a href="bab_html/halaman_358.html">Halaman 358</a></li>
+                <li><a href="bab_html/halaman_359.html">Halaman 359</a></li>
+                <li><a href="bab_html/halaman_360.html">Halaman 360</a></li>
+                <li><a href="bab_html/halaman_361.html">Halaman 361</a></li>
+                <li><a href="bab_html/halaman_362.html">Halaman 362</a></li>
+                <li><a href="bab_html/halaman_363.html">Halaman 363</a></li>
+                <li><a href="bab_html/halaman_364.html">Halaman 364</a></li>
+                <li><a href="bab_html/halaman_365.html">Halaman 365</a></li>
+                <li><a href="bab_html/halaman_366.html">Halaman 366</a></li>
+                <li><a href="bab_html/halaman_367.html">Halaman 367</a></li>
+                <li><a href="bab_html/halaman_368.html">Halaman 368</a></li>
+                <li><a href="bab_html/halaman_369.html">Halaman 369</a></li>
+                <li><a href="bab_html/halaman_370.html">Halaman 370</a></li>
+                <li><a href="bab_html/halaman_371.html">Halaman 371</a></li>
+                <li><a href="bab_html/halaman_372.html">Halaman 372</a></li>
+                <li><a href="bab_html/halaman_373.html">Halaman 373</a></li>
+                <li><a href="bab_html/halaman_374.html">Halaman 374</a></li>
+                <li><a href="bab_html/halaman_375.html">Halaman 375</a></li>
+                <li><a href="bab_html/halaman_376.html">Halaman 376</a></li>
+                <li><a href="bab_html/halaman_377.html">Halaman 377</a></li>
+                <li><a href="bab_html/halaman_378.html">Halaman 378</a></li>
+                <li><a href="bab_html/halaman_379.html">Halaman 379</a></li>
+                <li><a href="bab_html/halaman_380.html">Halaman 380</a></li>
+                <li><a href="bab_html/halaman_381.html">Halaman 381</a></li>
+                <li><a href="bab_html/halaman_382.html">Halaman 382</a></li>
+                <li><a href="bab_html/halaman_383.html">Halaman 383</a></li>
+                <li><a href="bab_html/halaman_384.html">Halaman 384</a></li>
+                <li><a href="bab_html/halaman_385.html">Halaman 385</a></li>
+                <li><a href="bab_html/halaman_386.html">Halaman 386</a></li>
+                <li><a href="bab_html/halaman_387.html">Halaman 387</a></li>
+                <li><a href="bab_html/halaman_388.html">Halaman 388</a></li>
+                <li><a href="bab_html/halaman_389.html">Halaman 389</a></li>
+                <li><a href="bab_html/halaman_390.html">Halaman 390</a></li>
+                <li><a href="bab_html/halaman_391.html">Halaman 391</a></li>
+                <li><a href="bab_html/halaman_392.html">Halaman 392</a></li>
+                <li><a href="bab_html/halaman_393.html">Halaman 393</a></li>
+                <li><a href="bab_html/halaman_394.html">Halaman 394</a></li>
+                <li><a href="bab_html/halaman_395.html">Halaman 395</a></li>
+                <li><a href="bab_html/halaman_396.html">Halaman 396</a></li>
+                <li><a href="bab_html/halaman_397.html">Halaman 397</a></li>
+                <li><a href="bab_html/halaman_398.html">Halaman 398</a></li>
+                <li><a href="bab_html/halaman_399.html">Halaman 399</a></li>
+                <li><a href="bab_html/halaman_400.html">Halaman 400</a></li>
+                <li><a href="bab_html/halaman_401.html">Halaman 401</a></li>
+                <li><a href="bab_html/halaman_402.html">Halaman 402</a></li>
+                <li><a href="bab_html/halaman_403.html">Halaman 403</a></li>
+                <li><a href="bab_html/halaman_404.html">Halaman 404</a></li>
+                <li><a href="bab_html/halaman_405.html">Halaman 405</a></li>
+                <li><a href="bab_html/halaman_406.html">Halaman 406</a></li>
+                <li><a href="bab_html/halaman_407.html">Halaman 407</a></li>
+                <li><a href="bab_html/halaman_408.html">Halaman 408</a></li>
+                <li><a href="bab_html/halaman_409.html">Halaman 409</a></li>
+                <li><a href="bab_html/halaman_410.html">Halaman 410</a></li>
+                <li><a href="bab_html/halaman_411.html">Halaman 411</a></li>
+                <li><a href="bab_html/halaman_412.html">Halaman 412</a></li>
+                <li><a href="bab_html/halaman_413.html">Halaman 413</a></li>
+                <li><a href="bab_html/halaman_414.html">Halaman 414</a></li>
+                <li><a href="bab_html/halaman_415.html">Halaman 415</a></li>
+                <li><a href="bab_html/halaman_416.html">Halaman 416</a></li>
+                <li><a href="bab_html/halaman_417.html">Halaman 417</a></li>
+                <li><a href="bab_html/halaman_418.html">Halaman 418</a></li>
+                <li><a href="bab_html/halaman_419.html">Halaman 419</a></li>
+                <li><a href="bab_html/halaman_420.html">Halaman 420</a></li>
+                <li><a href="bab_html/halaman_421.html">Halaman 421</a></li>
+                <li><a href="bab_html/halaman_422.html">Halaman 422</a></li>
+                <li><a href="bab_html/halaman_423.html">Halaman 423</a></li>
+                <li><a href="bab_html/halaman_424.html">Halaman 424</a></li>
+                <li><a href="bab_html/halaman_425.html">Halaman 425</a></li>
+                <li><a href="bab_html/halaman_426.html">Halaman 426</a></li>
+                <li><a href="bab_html/halaman_427.html">Halaman 427</a></li>
+                <li><a href="bab_html/halaman_428.html">Halaman 428</a></li>
+                <li><a href="bab_html/halaman_429.html">Halaman 429</a></li>
+
+        </ul>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            // 1. Logika Tombol Lanjut Membaca
+            let lastRead = localStorage.getItem('malioboro_last_read');
+            if (lastRead) {
+                let btn = document.getElementById('btnLanjut');
+                btn.href = "bab_html/" + lastRead;
+                btn.style.display = "block";
+            }
+            
+            // 2. LOGIKA TITIK MERAH: Ambil semua riwayat halaman yang sudah dibaca
+            let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+            riwayatBaca.forEach(function(pageFile) {
+                // Cari elemen kotak link yang sesuai dengan nama file
+                let kotakLink = document.querySelector('.grid-daftar a[href="bab_html/' + pageFile + '"]');
+                if (kotakLink) {
+                    kotakLink.classList.add('sudah-dibaca'); // Tempelkan tanda titik merah
+                }
+            });
+        });
+    </script>
+</body>
+</html>

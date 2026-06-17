@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 019</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_019.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_019.html')) {
+            riwayatBaca.push('halaman_019.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 019</h1>
+        <p>2 Jogja Tengah Malam</p>
+
+<p>Sebagai anak sulung, seorang Serana sudah terlatih untuk bisa melakukan apa pun yang ibunya minta. Contohnya, sewaktu gas di rumah habis, maka Sera harus bisa memasang gas, atau saat kran air rusak pun Sera harus tahu bagaimana cara memperbaikinya. Bukan hanya itu, alasan Sera senang mencuci baju juga karena di rumah dia selalu menjadi orang yang membersihkan pakaian-pakaian milik ibu dan adiknya. Kata Ibu anak sulung memang harus bisa semuanya, agar mandiri dan tidak bergantung pada siapa pun. Lucu, bilang saja Ibu enggan menyuruh adiknya untuk melakukan apa yang selalu Sera lakukan. Sebenarnya ia tak keberatan dengan segala tanggung jawab itu, tapi Sera ingin sang ibu bisa adil dengan dua putrinya agar mereka bisa berbakti dengan sama rata. Tapi mau bagaimana lagi, di mata Sabrina—ibu kandung Sera— adiknya yang duduk di bangku kelas dua SMP itu masih terlalu kecil untuk melakukan hal lain, selain makan dan tidur.</p>
+
+<p>Malam itu hal yang bagi Sera menyebalkan kembali terjadi. Ketika jam di nakasnya menunjukkan pukul sembilan malam, satu pesan dari Ibu masuk ke ponselnya.</p>
+
+<p>19</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_018.html">← Sebelumnya</a>
+            <a href="halaman_020.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

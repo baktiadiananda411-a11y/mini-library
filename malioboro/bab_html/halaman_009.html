@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 009</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_009.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_009.html')) {
+            riwayatBaca.push('halaman_009.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 009</h1>
+        <p>Hal paling penting dalam hubungan jarak jauh adalah komunikasi, bukankah semua orang paham hal itu? Mau sesempurna apa pun kepercayaan satu sama lain saat menjalin hubungan jarak jauh, kalau jarang komunikasi ya sama saja bohong. Sekarang Sera ada di posisi itu, sudah tiga tahun menjalin hubungan dengan seorang laki-laki bernama Richard Januarta, nahasnya di tahun keempat, hubungan mereka harus memasuki babak baru. Orang bilang long distance relationship, tapi Sera menyebut ini neraka.</p>
+
+<p>Jogja dan Jakarta tidak sejauh itu, ini bukan film roman di Netflix yang sering Sera lihat di mana sang kekasih harus pergi keluar negeri menyeberangi samudera. Sera dan Richard hanya terpisah 560 km, jika naik pesawat waktu tempuhnya tidak sampai dua jam, pulang pergi naik kereta dalam satu hari juga bisa, Namun masalah yang harus mereka hadapi bukan hanya jarak. Banyak hal lain yang membuat Sera sejujurnya lelah dengan hubungannya dengan Richard, salah satunya adalah mimpi. Mimpi Richard yang berhasil dia raih sejak tahun lalu. Sebuah profesi yang justru menjadi masalah utama di hubungan mereka.</p>
+
+<p>Tahun lalu: Richard masih seorang pengamen jalanan dengan kedua temannya—Bima dan Hasa—dan Sera menjadi saksi perjalanan karier laki-laki itu. Mereka menghabiskan waktu hampir empat tahun bersama, jadi tentu saja Sera ada di sisi Richard bahkan sejak bait lagu pertama ditulis oleh Richard ketika mereka masih duduk di bangku SMA, hingga kini menjadi idola baru yang memiliki ribuan penggemar. Karier Richard dimulai saat videonya bersama Hasa dan Bima sedang mengamen di pinggiran Jalan Malioboro viral di sosial media, hingga membuat mereka bertiga diundang ke acara TV di</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_008.html">← Sebelumnya</a>
+            <a href="halaman_010.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 002</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_002.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_002.html')) {
+            riwayatBaca.push('halaman_002.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 002</h1>
+        <p>balkon ke belakang. Dia jatuh ke dalam karena ternejut, tubuhnya tersungkur dan kepalanya menghantam pintu kaca balkon, "Shhh.” Sera meringis, kepalanya pusing.</p>
+
+<p>Suara berisik di depan pintu masih terdengar. Kacau, gagal sudah rencana bodohnya malam ini. Sera berjalan cepat ke depan, menganga kaget waktu melihat siapa yang berhasil menerobos masuk ke kamar apartemennya. Laki-laki yang sama sekali tidak Sera kenal.</p>
+
+<p>"Lo ngapain di kamar gue?" Sera berteriak nyaring dan berjalan ke arah laki-laki itu. “Lo gila ya? Lo baru aja dobrak pintu kamar gue, tau nggak?” Sera emosi saat melihat pintu terlepas dari engselnya, smart lock yang dipasang oleh pemilik asli karnar sewaan ini juga jebol. Sera penasaran seberapa kuat laki-laki itu sampai pintunya bisa lepas seperti ini.</p>
+
+<p>“Ini kamar hik gue, lo... lo ke laut, apa ke laut kan kamar gue lantai enam kamar di sini gue keluar."</p>
+
+<p>Sera rasa laki-laki di depannya ini mabuk jika menilai dari omongannya yang melantur dan tubuhnya tidak seimbang. Dia bahkan menunjuk-nunjuk Sera sambil sesekali menunjuk langit- langit kamar dengan mata yang nyaris tertutup.</p>
+
+<p>" “Nama lo siapa? Kamar lo nomor berapa? Cepet jawab sebelum gue panggil sekuriti!"</p>
+
+<p>"Malioboro." “Mabuk boleh, tolol jangan. Serius, nama lo siapa?" “Malioboro,” katanya tetap pada pendiriannya.</p>
+
+<p>Kesabaran Sera habis, dia dorong laki-laki itu ke luar dan berusaha menutup kamarnya dengan pintu yang sudah tidak bisa disebut sebagai pintu lagi. Persetan dengan semua</p>
+        
+        <div class="nav-buttons">
+            <a href="../index.html">← Kembali ke Daftar Isi</a>
+            <a href="halaman_003.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

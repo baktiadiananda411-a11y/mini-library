@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 324</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_324.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_324.html')) {
+            riwayatBaca.push('halaman_324.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 324</h1>
+        <p>Mereka resmi berkencan sejak dua jam yang lalu, kemudian keduanya memilih untuk duduk di balkon kamar mereka masing- masing seperti biasanya, “Aku masih penasaran kamu bales apa ke Zara," ujar Malio yang masih dihinggapi rasa penasaran. Sera menghapus pesan yang dia kirim dan hanya menyisakan pesan masuk yang Zara kirim. "Kamu bales apa sih, Sera? Aku penasaran banget serius deh."</p>
+
+<p>Tadi Malio menghubungi Zara dan bilang ke teman kecilnya itu jika yang baru saja membalas pesannya itu Sera, bukan dirinya. Malio khawatir Sera mengatakan hal yang bisa saja menyinggung perasaan Zara atau justru membuat dua perempuan itu salah paham, tapi Zara bilang dia mengetahuinya,</p>
+
+<p>324</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_323.html">← Sebelumnya</a>
+            <a href="halaman_325.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

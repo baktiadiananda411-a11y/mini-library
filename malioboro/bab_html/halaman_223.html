@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 223</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_223.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_223.html')) {
+            riwayatBaca.push('halaman_223.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 223</h1>
+        <p>Sera baru tahu berita apa yang Richard maksudkan di pesannya. Mungkin Sera sudah terlalu banyak menangis hingga matanya tidak bisa lagi mengeluarkan air mata, maka itu dia hanya tertawa. Tawanya pilu ketika dia membaca sebuah artikel tentang Richard yang mengonfirmasi jika dia dan Julia berkencan, juga kalimat yang menyatakan Julia adalah penyelamat Richard dalam bermusik. Berarti apa yang Sera lakukan selama ini tak berarti apa pun.</p>
+
+<p>Sera selalu berusaha menunjukkan pada Richard jika dia tetap mendukungnya dan memberikan segala hal yang Richard butuhkan, sekalipun mereka berjarak. Tapi ternyata, di saat dia mati-matian memberikan dukungannya, laki-laki itu malah mencari sosok lain yang bisa menjadi inspirasinya.</p>
+
+<p>Sekalipun menyakitkan, Sera berusaha untuk tidak menangis lagi. Baginya hubungan mereka telah selesai saat Sera meninggalkan Jakarta. Dia menekan layar ponsel, membuat sebuah keputusan paling baik untuk dirinya, memblokir kontak Richard.</p>
+
+<p>Kemudian Sera meletakkan ponselnya di atas kasur dan memilih untuk mendekati kulkas, perutnya terasa perih karena belum makan sejak kemarin. Di lemari esnya hanya ada satu karton susu, roti yang sudah kedaluwarsa tiga hari lalu, dan sekaleng kornet. Sera memilih untuk memakan roti itu untuk</p>
+
+<p>223</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_222.html">← Sebelumnya</a>
+            <a href="halaman_224.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

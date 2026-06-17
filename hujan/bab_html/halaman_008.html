@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 8 - Hujan</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() { document.body.classList.toggle('light-mode'); }
+        
+        localStorage.setItem('hujan_last_read', 'halaman_008.html');
+        let riwayatBaca = JSON.parse(localStorage.getItem('hujan_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_008.html')) {
+            riwayatBaca.push('halaman_008.html');
+            localStorage.setItem('hujan_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav"><a href="../index.html">← Daftar Isi</a></div>
+        <h1>Halaman 8</h1>
+        <p>Coxerarurartoxs: Selamat, penduduk bumi! Kita baru saja mendapatkan bayi yang kesepuluh miliar!”</p>
+
+<p>Tulisan itu ada di mana-mana pagi ini. Di layar-layar super- tipis stasiun kereta bawah tanah, di papan iklan gedung-gedung, di dinding bus kota, bahkan di lampu lalu lintas perempatan jalan. Huruf-hurufnya bergerak, diikuti gambar kembang api meletus, simbol perayaan. Saru-dua pejalan kaki mendongak, memperhatikan.</p>
+
+<p>"Kamu jangan sampai tertinggal, Lail" seorang wanita berusia 35 tahun berseru. Dia sedang berjalan cepat melewati trotoar.</p>
+
+<p>Sementara gerimis jatuh dari langit. Butir airnya lembut me- nerpa wajah.</p>
+
+<p>Anak perempuan yang berjalan di belakangnya mengangguk, buru-buru mengejar ibunya. Tadi dia mendongak, bukan mem- perhatikan tulisan-tulisan itu, tetapi asyik menatap butir air ge- rimis. Usianya tiga belas tahun, dengan rambur panjang tergerai. Dia mengenakan seragam sekolah baru, sepatu baru, juga tas baru,</p>
+
+<p>10</p>
+        <div class="nav-buttons">
+            <a href="halaman_007.html">← Sebelumnya</a>
+            <a href="halaman_009.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

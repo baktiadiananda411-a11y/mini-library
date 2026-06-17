@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 300</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_300.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_300.html')) {
+            riwayatBaca.push('halaman_300.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 300</h1>
+        <p>Bagi Sera, berada di sana membuat dia bisa mengobati rindunya akan rumah, Natal tahun lalu, Sera sendirian dan hanya melihat konser Richard di TV melalui Youtube. Sejak ayahnya meninggal, Hari Natal bukanlah hari yang ia nantikan lagi. Tahun ini pun sebenarnya sama, tadinya mungkin Sera hanya akan melewati natal dengan menonton ulang rekaman konser ExoPlanet dari laptop di dalam kamar apartemennya. Tapi ternyata Tuhan membawa Malio ke hidupnya. Sekarang Sera berada di tengah-tengah sebuah keluarga yang menyambutnya dengan kehangatan dan obrolan ramah.</p>
+
+<p>Mbak Michelle dan Mas Maurer selalu mengajaknya berbincang, mereka menceritakan pengalaman bekerja mereka pada Sera sambil membantu Melanie-yang baru saja kembali bergabung- bersama Marshal yang mulai menghias pohon natal.</p>
+
+<p>"Kamu tuh yang waktu itu dicari sama Malio di Jakarta kan? Waktu itu dia panik banget nyari-"</p>
+
+<p>"Mbak! Mbak tolong gunting siniin gunting.” Malio menyela dan menarik Michelle dari samping Sera, tangannya mencolek lengan Michelle seolah memberi kode.</p>
+
+<p>“Hahaha oke oke paham." Michelle tertawa sambil menggeleng.</p>
+
+<p>Melanie terus menghindari Sera, dia memilih duduk di belakang pohon natal dan menghias bagian yang bawah, lalu Malio duduk di samping Melanie sambil sesekali mengajak adiknya itu berbicara. Mata Malio juga terkadang jatuh pada Sera yang diapit oleh Maurer dan Michelle, laki-laki itu seolah ingin memastikan jika Sera nyaman berinteraksi dengan kakak- kakaknya.</p>
+
+<p>300</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_299.html">← Sebelumnya</a>
+            <a href="halaman_301.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

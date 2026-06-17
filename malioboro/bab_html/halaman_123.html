@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 123</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_123.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_123.html')) {
+            riwayatBaca.push('halaman_123.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 123</h1>
+        <p>menggantungkan kalimatnya. "Kabarin gue kalo lo capek sama cowok lo, gue ada di sini, nunggu lo capek sama dia.”</p>
+
+<p>Sera tertegun mendengar ucapan Malio, hatinya berontak tapi pikirannya buntu. Bibirnya terlalu kelu untuk membalas ucapan Malio yang baginya terkesan memiliki makna tertentu di baliknya.</p>
+
+<p>"Jangan dipikirin, gue cuma berharap kita bisa terus temenan dan lo boleh leluasa cari gue saat lo butuh apa pun." Kekehan Malio lolos, menatap wajah Sera yang menegang. "Gue cuma pengen jadi temen yang akan bantuin lo kalo lo lagi sedih.” Malio tak akan menganggap jika dirinya adalah Flynn Rider si Pencuri yang menerobos masuk ke dalam menara milik Rapunzel dan bersikap seolah dia akan membawa Rapunzel melihat dunia ketika dia kesepian. Dia hanya ingin dianggap sebagai teman yang bisa Sera andalkan saat dia butuh seseorang.</p>
+
+<p>“Udah sana tidur, good night Sera! Gue harap malam ini tidur lo nyenyak." Keduanya mengucapkan selamat malam kepada satu sama lain dan melambai dengan canggung.</p>
+
+<p>Dan malam ini berbeda dengan malam-malam sebelum- nya, di mana Sera biasanya memikirkan Richard sebelum jatuh terlelap. Ada sosok asing bernama Malioboro ikut hadir di dalam benaknya yang riuh ketika Sera berkali-kali membenarkan posisi bantalnya. Rasa sedih karena lagu yang Richard tulis untuk Julia itu diam-diam menyusup ke dasar hatinya sebab bayangan Malio, kura-kura, kucing, dan pegawai bank itu membuat jantung Sera berdebar. Ini salah, ayo tidur Sera, dia meyakini dirinya berkali- kali agar bisa terlelap dan mengenyahkan bayangan Malio dari otaknya. Namun sekalipun matanya terpejam, dia masih bisa melihat tetangganya itu.</p>
+
+<p>123</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_122.html">← Sebelumnya</a>
+            <a href="halaman_124.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

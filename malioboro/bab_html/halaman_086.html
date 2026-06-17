@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 086</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_086.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_086.html')) {
+            riwayatBaca.push('halaman_086.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 086</h1>
+        <p>Pesan dari Malio membuat Sera tanpa sengaja tertawa. Dia membayangkan wajah kesal Malio pada kucingnya, lalu berakhir membuat Tronton merajuk dan kabur ke kamarnya. Rasa takut Sera seolah menghilang, dia turun dari kasur dan mendekati pintu balkon.</p>
+
+<p>“Tronton!” Kucing itu ada di depan pintu kaca dan mengeong pelan.</p>
+
+<p>Diraihnya kucing itu ke gendongan, lalu dibawa masuk ke dalam. “Malionya lagi nugas ya, hm? Kamu diusir, ya? Hahaha ya udah di sini aja sama aku..." Sera menepuk-nepuk perut kucing itu, sedangkan si kucing sudah bergelung nyaman di atas kasur Sera.</p>
+
+<p>“Bentar aku kabarin pemilik kamu dulu, kasian dia nanti</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_085.html">← Sebelumnya</a>
+            <a href="halaman_087.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

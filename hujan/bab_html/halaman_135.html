@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 135 - Hujan</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() { document.body.classList.toggle('light-mode'); }
+        
+        localStorage.setItem('hujan_last_read', 'halaman_135.html');
+        let riwayatBaca = JSON.parse(localStorage.getItem('hujan_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_135.html')) {
+            riwayatBaca.push('halaman_135.html');
+            localStorage.setItem('hujan_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav"><a href="../index.html">← Daftar Isi</a></div>
+        <h1>Halaman 135</h1>
+        <p>bahu-membahu membantu penduduk. Meski fisiknya remuk karena lelah, Lail menyukai kesibukannya. Itu membuatnya berhenti memikirkan banyak hal. Aktivitas Organisasi Relawan menjadi penyembuh dari kenangan kehilangan ayah dan ibunya. Lail membalas kejamnya takdir dengan membantu orang lain. Mengobati kesedihan dengan berbuar baik. Kesibukan juga mampu mengusir kerinduannya kepada Esok.</p>
+
+<p>Saat itu usia Lail hampir tujuh belas, dan dia belum mengerti perasaannya dengan utuh.</p>
+
+<p>Baru beberapa tahun lagi dia mulai paham.</p>
+
+<p>137</p>
+        <div class="nav-buttons">
+            <a href="halaman_134.html">← Sebelumnya</a>
+            <a href="halaman_136.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

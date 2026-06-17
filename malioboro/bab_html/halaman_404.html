@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 404</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_404.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_404.html')) {
+            riwayatBaca.push('halaman_404.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 404</h1>
+        <p>emosinya meluap, dan Acha pun kelapasan mengucapkan sesuatu yang tidak pernah Sera duga, "DI saat gue berusaha buat dapetin laki-laki sempurna kayak Richard, lo malah ninggalin dia, Lo nggak bersyukur punya dia di hidup lo," Sera speechloss, tapi setidaknya sekarang dia sadar jika Acha memang bukan teman yang baik untuknya.</p>
+
+<p>Sekarang, Sera jadi lebih terbuka dengan kawannya yang lain, dia mau berbaur dan bergabung dengan siapa pun di kelas hingga tak pernah merasa kesepian lagi.</p>
+
+<p>Hari kedua puluh nggak ada Allotio! Aku abis main ke rumah kamu!!! OMG... rasanya aneh main ke sana tapi nggak sama kamu. Tapi seru!</p>
+
+<p>Tadi aku sama Bunda kamu bikin rollcake terus aku bawa ke apart rollcake-nya. Kita juga mandiin Teriyaki!</p>
+
+<p>Btu, Tronton tadi aku bawa juga, terus waktu diajak pulang dia kayak sedih gitu. Kayaknya Tronton kangen kamu. Hajikannya juga kangen sih, hehe.</p>
+
+<p>Rumah Malio sehangat laki-laki itu. Sera menghabiskan waktu seharian di sana. la membuat kue bersama Bunda, kemudian memandikan kucing-kucing keluarga Hartigan dengan Melanie dan Marshal di halaman belakang rumah. Ketika sore menjelang, ayah Malio yang baru datang bertugas mengajak Sera untuk memanen mangga langsung dari pohon di depan rumah mereka, lalu berakhir dengan makan rujak buah bersama di teras rumah.</p>
+
+<p>404</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_403.html">← Sebelumnya</a>
+            <a href="halaman_405.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>

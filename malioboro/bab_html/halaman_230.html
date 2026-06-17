@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Halaman 230</title>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+        
+        // 1. Catat untuk tombol pintasan Lanjut Membaca
+        localStorage.setItem('malioboro_last_read', 'halaman_230.html');
+
+        // 2. SENSOR PENCATAT: Masukkan halaman ini ke daftar riwayat yang sudah dibaca
+        let riwayatBaca = JSON.parse(localStorage.getItem('malioboro_read_pages') || '[]');
+        if (!riwayatBaca.includes('halaman_230.html')) {
+            riwayatBaca.push('halaman_230.html');
+            localStorage.setItem('malioboro_read_pages', JSON.stringify(riwayatBaca));
+        }
+    </script>
+
+    <div class="novel-wrapper">
+        <div class="top-nav">
+            <a href="../index.html">← Daftar Isi</a>
+        </div>
+        
+        <h1>Halaman 230</h1>
+        <p>Sekalipun tidak terganggu, Sera memilih untuk tidak menjawab pesan- pesan itu, tapi diam-diam dia sering tertawa karena pesan Malio yang</p>
+
+<p>baginya sangat konyol.</p>
+
+<p>D now</p>
+
+<p>Membayangkan ekspresi Malio yang memandikan Tronton di kamar mandinya yang sempit, membuat Sera tertawa. Ah, dia jadi merindukan kucing abu-abu itu, seandainya saja Tronton menemaninya pasti Sera tidak perlu sebosan ini.</p>
+
+<p>Hampir tiga hari dia berdiam diri di kamarnya, Sera pun mulai merasa jenuh dengan rutinitasnya. Acha bilang teman- teman di kampus menanyakan keberadaannya, sebagian memedulikannya dan sisanya hanya penasaran dengan kejadian kemarin,</p>
+        
+        <div class="nav-buttons">
+            <a href="halaman_229.html">← Sebelumnya</a>
+            <a href="halaman_231.html">Selanjutnya →</a>
+        </div>
+    </div>
+</body>
+</html>
