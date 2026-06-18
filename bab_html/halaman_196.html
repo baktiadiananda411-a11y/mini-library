@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman 196 - Seporsi Mie Ayam</title>
+    <style>
+        body {
+            background-color: #0f0f0f; color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8; margin: 0; padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            max-width: 800px; margin: 40px auto;
+            background-color: #1e1e1e; padding: 40px;
+            border-radius: 12px; box-shadow: 0 12px 25px rgba(187, 134, 252, 0.05);
+            border: 1px solid #333; transition: background-color 0.3s, border-color 0.3s;
+        }
+        h1 {
+            color: #555; text-align: center; margin-bottom: 20px;
+            font-size: 1.2em; letter-spacing: 2px; border-bottom: 1px dashed #333;
+            padding-bottom: 15px; text-transform: uppercase;
+        }
+        p { margin-bottom: 20px; font-size: 1.1em; text-align: justify; color: #ccc; }
+        
+        .page-img {
+            display: block; max-width: 100%; height: auto;
+            margin: 0 auto 30px auto; border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5); border: 1px solid #444;
+        }
+
+        .nav-buttons { display: flex; justify-content: space-between; margin: 30px 0; }
+        .nav-btn {
+            background-color: #2c2c2c; color: #bb86fc; padding: 10px 20px;
+            text-decoration: none; border-radius: 6px; font-weight: bold;
+            transition: all 0.2s; border: 1px solid #bb86fc;
+        }
+        .nav-btn:hover { background-color: #bb86fc; color: #121212; }
+        .back-index {
+            display: block; text-align: center; margin-top: 40px; color: #888;
+            text-decoration: none; font-size: 0.9em; transition: color 0.2s;
+        }
+        .back-index:hover { color: #bb86fc; }
+
+        /* TEMA TERANG */
+        body.light-mode { background-color: #f4f4f4; color: #333; }
+        body.light-mode .container { background-color: #ffffff; border-color: #ddd; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        body.light-mode h1 { color: #5e35b1; border-bottom-color: #ddd; }
+        body.light-mode p { color: #222; }
+        body.light-mode .nav-btn { background-color: #ffffff; color: #5e35b1; border-color: #5e35b1; }
+        body.light-mode .nav-btn:hover { background-color: #5e35b1; color: #ffffff; }
+        body.light-mode .back-index { color: #5e35b1; }
+        body.light-mode .back-index:hover { color: #4527a0; }
+        body.light-mode .page-img { border-color: #ccc; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+
+        .theme-toggle {
+            position: fixed; top: 20px; right: 20px; background: #bb86fc; color: #121212; 
+            border: none; padding: 10px 15px; border-radius: 20px; cursor: pointer; 
+            font-weight: bold; z-index: 1000; transition: 0.3s;
+        }
+        body.light-mode .theme-toggle { background: #5e35b1; color: #fff; }
+        
+        @media (max-width: 600px) {
+            .container { padding: 20px; margin: 10px auto; }
+            .nav-btn { padding: 8px 15px; font-size: 0.9em; }
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Ubah Tema</button>
+    <script>
+        function toggleTheme() { document.body.classList.toggle('light-mode'); }
+    </script>
+
+    <div class="container">
+        <h1>Halaman 196</h1>
+        
+        
+        <div><p>Aku membakar satu batang rokok lagi. Aku menawari Pak Jipren, tapi ia menolak. Tidak mau jadi orang buta yang bengek, katanya. Masuk akal juga.</p><p>Kami duduk di depan warung kelontong dengan pencahayaan remang-remang. Rasanya kami seperti dua orang yang terbuang di tengah masyarakat Ibukota.</p><p>"Tidak ada kata-kata yang tepat untuk melarang orang bunuh diri. Di satu sisi, memintanya tetap hidup akan terdengar egois. Di sisi lain, mendorongnya untuk mati pun tidak elok. Entah sudah berapa banyak orang-orang memberikan nasihat saat saya sedang ingin mati. Namun alih-alih membantu, yang mereka katakan justru seperti sedang menghakimi."</p><p>Aku mengangguk setuju, sangat mengerti dengan apa yang Pak Jipren katakan.</p><p>"Mereka selalu bilang untuk mengambil hikmahnya. Lah, justru kalau kita bisa melihat hikmahnya, kita gak akan depresi. Betul gak?"</p><p>"Betul banget, Pak," sahutku.</p><p>"Meminta orang depresi untuk melihat hikmah itu sama seperti menyuruh orang buta untuk melihat matahari. Justru kita depresi karena gak bisa melihat hikmah itu. Meski niat mereka baik, tapi rasanya itu tidak membantu sama sekali."</p><p>Aku lagi-lagi setuju.</p><p>"Lalu, ada yang menyuruh kita agar tetap sabar. Kamu tahu rasanya jadi orang buta lalu disuruh sabar?"</p><p>"Saya pasti marah sekali."</p><p>196</p></div>
+        
+        <div class="nav-buttons">
+            <a href="halaman_195.html" class="nav-btn">⬅️ Hal Sebelumnya</a>
+            <a href="halaman_197.html" class="nav-btn">Hal Selanjutnya ➡️</a>
+        </div>
+        
+        <a href="../index_mie_ayam.html" class="back-index">Kembali ke Daftar Isi</a>
+    </div>
+</body>
+</html>
