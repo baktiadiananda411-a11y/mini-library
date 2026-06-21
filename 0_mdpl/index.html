@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0 mdpl - Daftar Isi</title>
+    <style>
+        body { background-color: #121212; color: #e0e0e0; font-family: sans-serif; display: flex; justify-content: center; padding: 20px; transition: 0.3s; }
+        .wrapper { width: 100%; max-width: 600px; text-align: center; padding-top: 20px; }
+        h1 { color: #bb86fc; margin-bottom: 5px; }
+        .btn-kembali { color: #bb86fc; text-decoration: none; font-weight: bold; display: block; margin-bottom: 20px; }
+        .btn-lanjut { display: none; background: #bb86fc; color: #121212; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 20px auto; max-width: 250px; }
+        .grid-daftar { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 10px; padding: 0; list-style: none; margin-top: 20px; }
+        .grid-daftar a { background: #2c2c2c; color: #bb86fc; text-decoration: none; padding: 10px; border-radius: 6px; border: 1px solid #3d3d3d; display: block; position: relative; font-weight: bold; font-size: 14px; }
+        .grid-daftar a.sudah-dibaca::after { content: ""; position: absolute; top: 5px; right: 5px; width: 8px; height: 8px; background-color: #ff4c4c; border-radius: 50%; }
+        
+        body.light-mode { background-color: #f4f4f4; color: #333; }
+        body.light-mode .grid-daftar a { background: #fff; color: #5e35b1; border-color: #ddd; }
+        body.light-mode .btn-lanjut { background: #5e35b1; color: #fff; }
+        .theme-toggle { position: fixed; top: 20px; right: 20px; background: #bb86fc; color: #121212; border: none; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-weight: bold; }
+        body.light-mode .theme-toggle { background: #5e35b1; color: #fff; }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Tema</button>
+    <div class="wrapper">
+        <a href="../index.html" class="btn-kembali">← Lobi Utama</a>
+        <h1>0 mdpl</h1>
+        <p style="color:#888;">Format Visual</p>
+        <a href="#" id="btnLanjut" class="btn-lanjut">📖 Lanjut Membaca</a>
+        <ul class="grid-daftar">
+            <li><a href="bab_html/nol_halaman_001.html">Hal 001</a></li>
+            <li><a href="bab_html/nol_halaman_002.html">Hal 002</a></li>
+            <li><a href="bab_html/nol_halaman_003.html">Hal 003</a></li>
+            <li><a href="bab_html/nol_halaman_004.html">Hal 004</a></li>
+            <li><a href="bab_html/nol_halaman_005.html">Hal 005</a></li>
+            <li><a href="bab_html/nol_halaman_006.html">Hal 006</a></li>
+            <li><a href="bab_html/nol_halaman_007.html">Hal 007</a></li>
+            <li><a href="bab_html/nol_halaman_008.html">Hal 008</a></li>
+            <li><a href="bab_html/nol_halaman_009.html">Hal 009</a></li>
+            <li><a href="bab_html/nol_halaman_010.html">Hal 010</a></li>
+            <li><a href="bab_html/nol_halaman_011.html">Hal 011</a></li>
+            <li><a href="bab_html/nol_halaman_012.html">Hal 012</a></li>
+            <li><a href="bab_html/nol_halaman_013.html">Hal 013</a></li>
+            <li><a href="bab_html/nol_halaman_014.html">Hal 014</a></li>
+            <li><a href="bab_html/nol_halaman_015.html">Hal 015</a></li>
+            <li><a href="bab_html/nol_halaman_016.html">Hal 016</a></li>
+            <li><a href="bab_html/nol_halaman_017.html">Hal 017</a></li>
+            <li><a href="bab_html/nol_halaman_018.html">Hal 018</a></li>
+            <li><a href="bab_html/nol_halaman_019.html">Hal 019</a></li>
+            <li><a href="bab_html/nol_halaman_020.html">Hal 020</a></li>
+            <li><a href="bab_html/nol_halaman_021.html">Hal 021</a></li>
+            <li><a href="bab_html/nol_halaman_022.html">Hal 022</a></li>
+            <li><a href="bab_html/nol_halaman_023.html">Hal 023</a></li>
+            <li><a href="bab_html/nol_halaman_024.html">Hal 024</a></li>
+            <li><a href="bab_html/nol_halaman_025.html">Hal 025</a></li>
+            <li><a href="bab_html/nol_halaman_026.html">Hal 026</a></li>
+            <li><a href="bab_html/nol_halaman_027.html">Hal 027</a></li>
+            <li><a href="bab_html/nol_halaman_028.html">Hal 028</a></li>
+            <li><a href="bab_html/nol_halaman_029.html">Hal 029</a></li>
+            <li><a href="bab_html/nol_halaman_030.html">Hal 030</a></li>
+            <li><a href="bab_html/nol_halaman_031.html">Hal 031</a></li>
+            <li><a href="bab_html/nol_halaman_032.html">Hal 032</a></li>
+            <li><a href="bab_html/nol_halaman_033.html">Hal 033</a></li>
+            <li><a href="bab_html/nol_halaman_034.html">Hal 034</a></li>
+            <li><a href="bab_html/nol_halaman_035.html">Hal 035</a></li>
+            <li><a href="bab_html/nol_halaman_036.html">Hal 036</a></li>
+            <li><a href="bab_html/nol_halaman_037.html">Hal 037</a></li>
+            <li><a href="bab_html/nol_halaman_038.html">Hal 038</a></li>
+            <li><a href="bab_html/nol_halaman_039.html">Hal 039</a></li>
+            <li><a href="bab_html/nol_halaman_040.html">Hal 040</a></li>
+            <li><a href="bab_html/nol_halaman_041.html">Hal 041</a></li>
+            <li><a href="bab_html/nol_halaman_042.html">Hal 042</a></li>
+            <li><a href="bab_html/nol_halaman_043.html">Hal 043</a></li>
+            <li><a href="bab_html/nol_halaman_044.html">Hal 044</a></li>
+            <li><a href="bab_html/nol_halaman_045.html">Hal 045</a></li>
+            <li><a href="bab_html/nol_halaman_046.html">Hal 046</a></li>
+            <li><a href="bab_html/nol_halaman_047.html">Hal 047</a></li>
+            <li><a href="bab_html/nol_halaman_048.html">Hal 048</a></li>
+            <li><a href="bab_html/nol_halaman_049.html">Hal 049</a></li>
+            <li><a href="bab_html/nol_halaman_050.html">Hal 050</a></li>
+            <li><a href="bab_html/nol_halaman_051.html">Hal 051</a></li>
+            <li><a href="bab_html/nol_halaman_052.html">Hal 052</a></li>
+            <li><a href="bab_html/nol_halaman_053.html">Hal 053</a></li>
+            <li><a href="bab_html/nol_halaman_054.html">Hal 054</a></li>
+            <li><a href="bab_html/nol_halaman_055.html">Hal 055</a></li>
+            <li><a href="bab_html/nol_halaman_056.html">Hal 056</a></li>
+            <li><a href="bab_html/nol_halaman_057.html">Hal 057</a></li>
+            <li><a href="bab_html/nol_halaman_058.html">Hal 058</a></li>
+            <li><a href="bab_html/nol_halaman_059.html">Hal 059</a></li>
+            <li><a href="bab_html/nol_halaman_060.html">Hal 060</a></li>
+            <li><a href="bab_html/nol_halaman_061.html">Hal 061</a></li>
+            <li><a href="bab_html/nol_halaman_062.html">Hal 062</a></li>
+            <li><a href="bab_html/nol_halaman_063.html">Hal 063</a></li>
+            <li><a href="bab_html/nol_halaman_064.html">Hal 064</a></li>
+            <li><a href="bab_html/nol_halaman_065.html">Hal 065</a></li>
+            <li><a href="bab_html/nol_halaman_066.html">Hal 066</a></li>
+            <li><a href="bab_html/nol_halaman_067.html">Hal 067</a></li>
+            <li><a href="bab_html/nol_halaman_068.html">Hal 068</a></li>
+            <li><a href="bab_html/nol_halaman_069.html">Hal 069</a></li>
+            <li><a href="bab_html/nol_halaman_070.html">Hal 070</a></li>
+            <li><a href="bab_html/nol_halaman_071.html">Hal 071</a></li>
+            <li><a href="bab_html/nol_halaman_072.html">Hal 072</a></li>
+            <li><a href="bab_html/nol_halaman_073.html">Hal 073</a></li>
+            <li><a href="bab_html/nol_halaman_074.html">Hal 074</a></li>
+            <li><a href="bab_html/nol_halaman_075.html">Hal 075</a></li>
+            <li><a href="bab_html/nol_halaman_076.html">Hal 076</a></li>
+            <li><a href="bab_html/nol_halaman_077.html">Hal 077</a></li>
+            <li><a href="bab_html/nol_halaman_078.html">Hal 078</a></li>
+            <li><a href="bab_html/nol_halaman_079.html">Hal 079</a></li>
+            <li><a href="bab_html/nol_halaman_080.html">Hal 080</a></li>
+            <li><a href="bab_html/nol_halaman_081.html">Hal 081</a></li>
+            <li><a href="bab_html/nol_halaman_082.html">Hal 082</a></li>
+            <li><a href="bab_html/nol_halaman_083.html">Hal 083</a></li>
+            <li><a href="bab_html/nol_halaman_084.html">Hal 084</a></li>
+            <li><a href="bab_html/nol_halaman_085.html">Hal 085</a></li>
+            <li><a href="bab_html/nol_halaman_086.html">Hal 086</a></li>
+            <li><a href="bab_html/nol_halaman_087.html">Hal 087</a></li>
+            <li><a href="bab_html/nol_halaman_088.html">Hal 088</a></li>
+            <li><a href="bab_html/nol_halaman_089.html">Hal 089</a></li>
+            <li><a href="bab_html/nol_halaman_090.html">Hal 090</a></li>
+            <li><a href="bab_html/nol_halaman_091.html">Hal 091</a></li>
+            <li><a href="bab_html/nol_halaman_092.html">Hal 092</a></li>
+            <li><a href="bab_html/nol_halaman_093.html">Hal 093</a></li>
+            <li><a href="bab_html/nol_halaman_094.html">Hal 094</a></li>
+            <li><a href="bab_html/nol_halaman_095.html">Hal 095</a></li>
+            <li><a href="bab_html/nol_halaman_096.html">Hal 096</a></li>
+            <li><a href="bab_html/nol_halaman_097.html">Hal 097</a></li>
+            <li><a href="bab_html/nol_halaman_098.html">Hal 098</a></li>
+            <li><a href="bab_html/nol_halaman_099.html">Hal 099</a></li>
+            <li><a href="bab_html/nol_halaman_100.html">Hal 100</a></li>
+            <li><a href="bab_html/nol_halaman_101.html">Hal 101</a></li>
+            <li><a href="bab_html/nol_halaman_102.html">Hal 102</a></li>
+            <li><a href="bab_html/nol_halaman_103.html">Hal 103</a></li>
+            <li><a href="bab_html/nol_halaman_104.html">Hal 104</a></li>
+            <li><a href="bab_html/nol_halaman_105.html">Hal 105</a></li>
+            <li><a href="bab_html/nol_halaman_106.html">Hal 106</a></li>
+            <li><a href="bab_html/nol_halaman_107.html">Hal 107</a></li>
+            <li><a href="bab_html/nol_halaman_108.html">Hal 108</a></li>
+            <li><a href="bab_html/nol_halaman_109.html">Hal 109</a></li>
+            <li><a href="bab_html/nol_halaman_110.html">Hal 110</a></li>
+            <li><a href="bab_html/nol_halaman_111.html">Hal 111</a></li>
+            <li><a href="bab_html/nol_halaman_112.html">Hal 112</a></li>
+            <li><a href="bab_html/nol_halaman_113.html">Hal 113</a></li>
+            <li><a href="bab_html/nol_halaman_114.html">Hal 114</a></li>
+            <li><a href="bab_html/nol_halaman_115.html">Hal 115</a></li>
+            <li><a href="bab_html/nol_halaman_116.html">Hal 116</a></li>
+            <li><a href="bab_html/nol_halaman_117.html">Hal 117</a></li>
+            <li><a href="bab_html/nol_halaman_118.html">Hal 118</a></li>
+            <li><a href="bab_html/nol_halaman_119.html">Hal 119</a></li>
+            <li><a href="bab_html/nol_halaman_120.html">Hal 120</a></li>
+            <li><a href="bab_html/nol_halaman_121.html">Hal 121</a></li>
+            <li><a href="bab_html/nol_halaman_122.html">Hal 122</a></li>
+            <li><a href="bab_html/nol_halaman_123.html">Hal 123</a></li>
+            <li><a href="bab_html/nol_halaman_124.html">Hal 124</a></li>
+            <li><a href="bab_html/nol_halaman_125.html">Hal 125</a></li>
+            <li><a href="bab_html/nol_halaman_126.html">Hal 126</a></li>
+            <li><a href="bab_html/nol_halaman_127.html">Hal 127</a></li>
+            <li><a href="bab_html/nol_halaman_128.html">Hal 128</a></li>
+            <li><a href="bab_html/nol_halaman_129.html">Hal 129</a></li>
+            <li><a href="bab_html/nol_halaman_130.html">Hal 130</a></li>
+            <li><a href="bab_html/nol_halaman_131.html">Hal 131</a></li>
+            <li><a href="bab_html/nol_halaman_132.html">Hal 132</a></li>
+            <li><a href="bab_html/nol_halaman_133.html">Hal 133</a></li>
+            <li><a href="bab_html/nol_halaman_134.html">Hal 134</a></li>
+            <li><a href="bab_html/nol_halaman_135.html">Hal 135</a></li>
+            <li><a href="bab_html/nol_halaman_136.html">Hal 136</a></li>
+            <li><a href="bab_html/nol_halaman_137.html">Hal 137</a></li>
+            <li><a href="bab_html/nol_halaman_138.html">Hal 138</a></li>
+            <li><a href="bab_html/nol_halaman_139.html">Hal 139</a></li>
+            <li><a href="bab_html/nol_halaman_140.html">Hal 140</a></li>
+            <li><a href="bab_html/nol_halaman_141.html">Hal 141</a></li>
+            <li><a href="bab_html/nol_halaman_142.html">Hal 142</a></li>
+            <li><a href="bab_html/nol_halaman_143.html">Hal 143</a></li>
+            <li><a href="bab_html/nol_halaman_144.html">Hal 144</a></li>
+            <li><a href="bab_html/nol_halaman_145.html">Hal 145</a></li>
+            <li><a href="bab_html/nol_halaman_146.html">Hal 146</a></li>
+            <li><a href="bab_html/nol_halaman_147.html">Hal 147</a></li>
+            <li><a href="bab_html/nol_halaman_148.html">Hal 148</a></li>
+            <li><a href="bab_html/nol_halaman_149.html">Hal 149</a></li>
+            <li><a href="bab_html/nol_halaman_150.html">Hal 150</a></li>
+            <li><a href="bab_html/nol_halaman_151.html">Hal 151</a></li>
+            <li><a href="bab_html/nol_halaman_152.html">Hal 152</a></li>
+            <li><a href="bab_html/nol_halaman_153.html">Hal 153</a></li>
+            <li><a href="bab_html/nol_halaman_154.html">Hal 154</a></li>
+            <li><a href="bab_html/nol_halaman_155.html">Hal 155</a></li>
+            <li><a href="bab_html/nol_halaman_156.html">Hal 156</a></li>
+            <li><a href="bab_html/nol_halaman_157.html">Hal 157</a></li>
+            <li><a href="bab_html/nol_halaman_158.html">Hal 158</a></li>
+            <li><a href="bab_html/nol_halaman_159.html">Hal 159</a></li>
+            <li><a href="bab_html/nol_halaman_160.html">Hal 160</a></li>
+            <li><a href="bab_html/nol_halaman_161.html">Hal 161</a></li>
+            <li><a href="bab_html/nol_halaman_162.html">Hal 162</a></li>
+            <li><a href="bab_html/nol_halaman_163.html">Hal 163</a></li>
+            <li><a href="bab_html/nol_halaman_164.html">Hal 164</a></li>
+            <li><a href="bab_html/nol_halaman_165.html">Hal 165</a></li>
+            <li><a href="bab_html/nol_halaman_166.html">Hal 166</a></li>
+            <li><a href="bab_html/nol_halaman_167.html">Hal 167</a></li>
+            <li><a href="bab_html/nol_halaman_168.html">Hal 168</a></li>
+            <li><a href="bab_html/nol_halaman_169.html">Hal 169</a></li>
+            <li><a href="bab_html/nol_halaman_170.html">Hal 170</a></li>
+            <li><a href="bab_html/nol_halaman_171.html">Hal 171</a></li>
+            <li><a href="bab_html/nol_halaman_172.html">Hal 172</a></li>
+            <li><a href="bab_html/nol_halaman_173.html">Hal 173</a></li>
+            <li><a href="bab_html/nol_halaman_174.html">Hal 174</a></li>
+            <li><a href="bab_html/nol_halaman_175.html">Hal 175</a></li>
+            <li><a href="bab_html/nol_halaman_176.html">Hal 176</a></li>
+            <li><a href="bab_html/nol_halaman_177.html">Hal 177</a></li>
+            <li><a href="bab_html/nol_halaman_178.html">Hal 178</a></li>
+            <li><a href="bab_html/nol_halaman_179.html">Hal 179</a></li>
+            <li><a href="bab_html/nol_halaman_180.html">Hal 180</a></li>
+            <li><a href="bab_html/nol_halaman_181.html">Hal 181</a></li>
+            <li><a href="bab_html/nol_halaman_182.html">Hal 182</a></li>
+            <li><a href="bab_html/nol_halaman_183.html">Hal 183</a></li>
+            <li><a href="bab_html/nol_halaman_184.html">Hal 184</a></li>
+            <li><a href="bab_html/nol_halaman_185.html">Hal 185</a></li>
+            <li><a href="bab_html/nol_halaman_186.html">Hal 186</a></li>
+            <li><a href="bab_html/nol_halaman_187.html">Hal 187</a></li>
+            <li><a href="bab_html/nol_halaman_188.html">Hal 188</a></li>
+            <li><a href="bab_html/nol_halaman_189.html">Hal 189</a></li>
+            <li><a href="bab_html/nol_halaman_190.html">Hal 190</a></li>
+            <li><a href="bab_html/nol_halaman_191.html">Hal 191</a></li>
+            <li><a href="bab_html/nol_halaman_192.html">Hal 192</a></li>
+            <li><a href="bab_html/nol_halaman_193.html">Hal 193</a></li>
+            <li><a href="bab_html/nol_halaman_194.html">Hal 194</a></li>
+            <li><a href="bab_html/nol_halaman_195.html">Hal 195</a></li>
+            <li><a href="bab_html/nol_halaman_196.html">Hal 196</a></li>
+            <li><a href="bab_html/nol_halaman_197.html">Hal 197</a></li>
+            <li><a href="bab_html/nol_halaman_198.html">Hal 198</a></li>
+            <li><a href="bab_html/nol_halaman_199.html">Hal 199</a></li>
+            <li><a href="bab_html/nol_halaman_200.html">Hal 200</a></li>
+            <li><a href="bab_html/nol_halaman_201.html">Hal 201</a></li>
+            <li><a href="bab_html/nol_halaman_202.html">Hal 202</a></li>
+            <li><a href="bab_html/nol_halaman_203.html">Hal 203</a></li>
+            <li><a href="bab_html/nol_halaman_204.html">Hal 204</a></li>
+            <li><a href="bab_html/nol_halaman_205.html">Hal 205</a></li>
+            <li><a href="bab_html/nol_halaman_206.html">Hal 206</a></li>
+            <li><a href="bab_html/nol_halaman_207.html">Hal 207</a></li>
+            <li><a href="bab_html/nol_halaman_208.html">Hal 208</a></li>
+            <li><a href="bab_html/nol_halaman_209.html">Hal 209</a></li>
+            <li><a href="bab_html/nol_halaman_210.html">Hal 210</a></li>
+            <li><a href="bab_html/nol_halaman_211.html">Hal 211</a></li>
+            <li><a href="bab_html/nol_halaman_212.html">Hal 212</a></li>
+            <li><a href="bab_html/nol_halaman_213.html">Hal 213</a></li>
+            <li><a href="bab_html/nol_halaman_214.html">Hal 214</a></li>
+            <li><a href="bab_html/nol_halaman_215.html">Hal 215</a></li>
+            <li><a href="bab_html/nol_halaman_216.html">Hal 216</a></li>
+            <li><a href="bab_html/nol_halaman_217.html">Hal 217</a></li>
+            <li><a href="bab_html/nol_halaman_218.html">Hal 218</a></li>
+            <li><a href="bab_html/nol_halaman_219.html">Hal 219</a></li>
+            <li><a href="bab_html/nol_halaman_220.html">Hal 220</a></li>
+            <li><a href="bab_html/nol_halaman_221.html">Hal 221</a></li>
+            <li><a href="bab_html/nol_halaman_222.html">Hal 222</a></li>
+            <li><a href="bab_html/nol_halaman_223.html">Hal 223</a></li>
+            <li><a href="bab_html/nol_halaman_224.html">Hal 224</a></li>
+            <li><a href="bab_html/nol_halaman_225.html">Hal 225</a></li>
+            <li><a href="bab_html/nol_halaman_226.html">Hal 226</a></li>
+            <li><a href="bab_html/nol_halaman_227.html">Hal 227</a></li>
+            <li><a href="bab_html/nol_halaman_228.html">Hal 228</a></li>
+            <li><a href="bab_html/nol_halaman_229.html">Hal 229</a></li>
+            <li><a href="bab_html/nol_halaman_230.html">Hal 230</a></li>
+            <li><a href="bab_html/nol_halaman_231.html">Hal 231</a></li>
+            <li><a href="bab_html/nol_halaman_232.html">Hal 232</a></li>
+            <li><a href="bab_html/nol_halaman_233.html">Hal 233</a></li>
+            <li><a href="bab_html/nol_halaman_234.html">Hal 234</a></li>
+            <li><a href="bab_html/nol_halaman_235.html">Hal 235</a></li>
+            <li><a href="bab_html/nol_halaman_236.html">Hal 236</a></li>
+            <li><a href="bab_html/nol_halaman_237.html">Hal 237</a></li>
+            <li><a href="bab_html/nol_halaman_238.html">Hal 238</a></li>
+            <li><a href="bab_html/nol_halaman_239.html">Hal 239</a></li>
+            <li><a href="bab_html/nol_halaman_240.html">Hal 240</a></li>
+            <li><a href="bab_html/nol_halaman_241.html">Hal 241</a></li>
+            <li><a href="bab_html/nol_halaman_242.html">Hal 242</a></li>
+            <li><a href="bab_html/nol_halaman_243.html">Hal 243</a></li>
+            <li><a href="bab_html/nol_halaman_244.html">Hal 244</a></li>
+            <li><a href="bab_html/nol_halaman_245.html">Hal 245</a></li>
+            <li><a href="bab_html/nol_halaman_246.html">Hal 246</a></li>
+            <li><a href="bab_html/nol_halaman_247.html">Hal 247</a></li>
+            <li><a href="bab_html/nol_halaman_248.html">Hal 248</a></li>
+            <li><a href="bab_html/nol_halaman_249.html">Hal 249</a></li>
+            <li><a href="bab_html/nol_halaman_250.html">Hal 250</a></li>
+            <li><a href="bab_html/nol_halaman_251.html">Hal 251</a></li>
+            <li><a href="bab_html/nol_halaman_252.html">Hal 252</a></li>
+            <li><a href="bab_html/nol_halaman_253.html">Hal 253</a></li>
+            <li><a href="bab_html/nol_halaman_254.html">Hal 254</a></li>
+            <li><a href="bab_html/nol_halaman_255.html">Hal 255</a></li>
+            <li><a href="bab_html/nol_halaman_256.html">Hal 256</a></li>
+            <li><a href="bab_html/nol_halaman_257.html">Hal 257</a></li>
+            <li><a href="bab_html/nol_halaman_258.html">Hal 258</a></li>
+            <li><a href="bab_html/nol_halaman_259.html">Hal 259</a></li>
+            <li><a href="bab_html/nol_halaman_260.html">Hal 260</a></li>
+            <li><a href="bab_html/nol_halaman_261.html">Hal 261</a></li>
+            <li><a href="bab_html/nol_halaman_262.html">Hal 262</a></li>
+            <li><a href="bab_html/nol_halaman_263.html">Hal 263</a></li>
+            <li><a href="bab_html/nol_halaman_264.html">Hal 264</a></li>
+            <li><a href="bab_html/nol_halaman_265.html">Hal 265</a></li>
+            <li><a href="bab_html/nol_halaman_266.html">Hal 266</a></li>
+            <li><a href="bab_html/nol_halaman_267.html">Hal 267</a></li>
+            <li><a href="bab_html/nol_halaman_268.html">Hal 268</a></li>
+            <li><a href="bab_html/nol_halaman_269.html">Hal 269</a></li>
+            <li><a href="bab_html/nol_halaman_270.html">Hal 270</a></li>
+            <li><a href="bab_html/nol_halaman_271.html">Hal 271</a></li>
+            <li><a href="bab_html/nol_halaman_272.html">Hal 272</a></li>
+            <li><a href="bab_html/nol_halaman_273.html">Hal 273</a></li>
+            <li><a href="bab_html/nol_halaman_274.html">Hal 274</a></li>
+            <li><a href="bab_html/nol_halaman_275.html">Hal 275</a></li>
+            <li><a href="bab_html/nol_halaman_276.html">Hal 276</a></li>
+            <li><a href="bab_html/nol_halaman_277.html">Hal 277</a></li>
+            <li><a href="bab_html/nol_halaman_278.html">Hal 278</a></li>
+            <li><a href="bab_html/nol_halaman_279.html">Hal 279</a></li>
+            <li><a href="bab_html/nol_halaman_280.html">Hal 280</a></li>
+            <li><a href="bab_html/nol_halaman_281.html">Hal 281</a></li>
+            <li><a href="bab_html/nol_halaman_282.html">Hal 282</a></li>
+            <li><a href="bab_html/nol_halaman_283.html">Hal 283</a></li>
+            <li><a href="bab_html/nol_halaman_284.html">Hal 284</a></li>
+            <li><a href="bab_html/nol_halaman_285.html">Hal 285</a></li>
+            <li><a href="bab_html/nol_halaman_286.html">Hal 286</a></li>
+            <li><a href="bab_html/nol_halaman_287.html">Hal 287</a></li>
+            <li><a href="bab_html/nol_halaman_288.html">Hal 288</a></li>
+            <li><a href="bab_html/nol_halaman_289.html">Hal 289</a></li>
+            <li><a href="bab_html/nol_halaman_290.html">Hal 290</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggleTheme() { document.body.classList.toggle('light-mode'); }
+        document.addEventListener("DOMContentLoaded", function() {
+            let lastRead = localStorage.getItem('nol_last_read');
+            if (lastRead) {
+                let btn = document.getElementById('btnLanjut');
+                btn.href = "bab_html/" + lastRead;
+                btn.style.display = "block";
+            }
+            let riwayatBaca = JSON.parse(localStorage.getItem('nol_read_pages') || '[]');
+            riwayatBaca.forEach(function(pageFile) {
+                let kotakLink = document.querySelector('.grid-daftar a[href="bab_html/' + pageFile + '"]');
+                if (kotakLink) kotakLink.classList.add('sudah-dibaca');
+            });
+        });
+    </script>
+</body>
+</html>
