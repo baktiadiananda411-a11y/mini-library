@@ -5,14 +5,13 @@ import time
 from bs4 import BeautifulSoup
 from google import genai
 from google.genai import types
-
 # =====================================================================
-# 🛠️ KONFIGURASI UTAMA (VERSI ROTASI SULTAN - START HALAMAN 5)
+# 🛠️ KONFIGURASI UTAMA (VERSI ROTASI 5 KUNCI SULTAN - START HALAMAN 6)
 # =====================================================================
 folder_html = "bab_html"         
 folder_audio = "audio"           
 
-# WAK, MASUKKAN API KEY BARUMU DI SINI (Boleh masukkan lebih dari satu):
+# WAK, MASUKKAN KELIMA API KEY KAMU DI SINI:
 API_KEYS = [
     
 ]
@@ -116,17 +115,16 @@ def generate_audio_for_page(file_path, output_path):
                     if not mime_type_final:
                         mime_type_final = chunk.parts[0].inline_data.mime_type
             
-            # Jika lolos tanpa error, lanjut ke paragraf berikutnya
             indeks += 1
             
         except Exception as e:
             pesan_error = str(e)
             if "429" in pesan_error or "RESOURCE_EXHAUSTED" in pesan_error or "Quota" in pesan_error:
-                print(f"\n   ⚠️ [LIMIT HABIS] API Key ke-{current_key_index + 1} sudah kelelahan!")
+                print(f"\n   ⚠️ [LIMIT HABIS] API Key ke-{current_key_index + 1} tewas!")
                 current_key_index += 1
                 
                 if current_key_index >= len(API_KEYS):
-                    print("   ❌ GAGAL TOTAL: Semua stok API Key kamu sudah habis!")
+                    print("   ❌ GAGAL TOTAL: Kelima stok API Key kamu sudah habis tak bersisa!")
                     return "HABIS_SEMUA"
                 
                 print(f"   🔄 GANTI MESIN: Pindah ke API Key ke-{current_key_index + 1}... Mengulang paragraf tadi.")
@@ -146,7 +144,7 @@ def generate_audio_for_page(file_path, output_path):
     return False
 
 # =====================================================================
-# 🚀 EKSEKUSI BATCH (TEMBAK HALAMAN 5, 6, 7)
+# 🚀 EKSEKUSI BATCH (TEMBAK HALAMAN 6 SAMPAI KUNCI HABIS)
 # =====================================================================
 def main():
     jalur_pencarian = os.path.join(folder_html, "*.html")
@@ -157,9 +155,9 @@ def main():
         print(f"Folder '{folder_html}' kosong!")
         return
 
-    # 🔥 MANTRA BARU: Ambil halaman 5, 6, dan 7 (Indeks 4 sampai sebelum 7)
-    daftar_file = daftar_file[4:7]
-    print(f"⚡ Memulai pemrosesan dari halaman 5 sebanyak {len(daftar_file)} halaman...\n")
+    # 🔥 MANTRA BARU: Mulai dari halaman 6 (Indeks 5) sampai array habis
+    daftar_file = daftar_file[5:]
+    print(f"⚡ Memulai penyerangan dari halaman 6 untuk {len(daftar_file)} halaman...\n")
 
     for file_html_path in daftar_file:
         nama_file = os.path.basename(file_html_path)
@@ -177,10 +175,10 @@ def main():
         status = generate_audio_for_page(file_html_path, file_audio_path)
         
         if status == "HABIS_SEMUA":
-            print("\n🛑 PROGRAM BERHENTI. Silakan kumpulkan API Key baru besok.")
+            print("\n🛑 PROGRAM BERHENTI. Seluruh 5 API Key sudah tumbang!")
             break
 
-    print("\n🎉 BATCH TESTING DARI HALAMAN 5 SELESAI!")
+    print("\n🎉 BATCH TESTING SELESAI!")
 
 if __name__ == "__main__":
     main()
