@@ -5,6 +5,7 @@ import time
 from bs4 import BeautifulSoup
 from google import genai
 from google.genai import types
+
 # =====================================================================
 # 🛠️ KONFIGURASI UTAMA (VERSI ROTASI 5 KUNCI SULTAN - START HALAMAN 6)
 # =====================================================================
